@@ -15,76 +15,34 @@
 
 <body>
 <header>
-    <div class="container">
-        <?php require_once 'includes/header.php'; ?>
-    </div>
+    <?php require_once 'includes/header.php'; ?>
 </header>
-<section id="pleyers-grid">
-    <hgroup>
-        <h2>Comunidad Linux UNI</h2>
-        <h3>Bienvenido a la comunidad</h3>
-    </hgroup>
-    <ul>
-        <?php $n = 1; for ($i = 1; $i <= 30; $i++) { ?>
-        <li><a href="#" title="#"><img src="img/slide<?php echo $n; ?>_small.png" alt="Foto de persil aqui"></a></li>
-        <?php $n++; if ($n == 9) { $n = 1; } } ?>
-    </ul>
-</section>
-<section id="content" class="container">
+<div class="container">
+<div id="content">
+    <div class="left">
+        <nav>
+            <?php require_once 'includes/nav.php'; ?>
+        </nav>
+        <div id="logo-web">
+            <a class="img-container"><img src="" alt=""></a>
+            <p>Costrucci&oacute;n libre para la internet</p>
+        </div>
+    </div>
     <section id="articles">
-        <?php for ($i=1; $i <= 3; $i++) { ?>
+        <?php for ($i=1; $i <= 2; $i++) { ?>
         <article>
-            <a href="#" title="#" class="img-container"><img src="img/pre_960.png" alt="Imagen de pruebaa"></a>
-            <div>
-                <h2><a href="#" title="#">Flisol 2012</a></h2>
-                <time datetime="2001-05-15 19:00">28 Abril, 2012</time>
-                <p>El Festival Latinoamericano de Instalación de Software Libre es el evento de software libre más importante en América Latina. En esta ocasión, se llevará a cabo el Sábado 28 de Abril del 2012, desde las 8:00 hasta las 3:00pm en la Universidad Centroamericana UCA.</p>
-            </div>
+            <h2><a href="#" title="#">Flisol 2012</a></h2>
+            <time datetime="2001-05-15 19:00">28 Abril, 2012</time>
+            <a href="#" title="#" class="img-container"><img src="img/flisol_600.jpg" alt="Imagen de pruebaa"></a>
+            <p>El Festival Latinoamericano de Instalación de Software Libre es el evento de software libre más importante en América Latina. En esta ocasión, se llevará a cabo el Sábado 28 de Abril del 2012, desde las 8:00 hasta las 3:00pm en la Universidad Centroamericana UCA.</p>
         </article>
         <?php } ?>
     </section>
-    <section id="top">
-        <div id="authors">
-            <h3>Top 5 Autores</h3>
-            <ul>
-                <li>
-                    <a href="#" title="#" class="img-container"><img src="img/slide1_small.png" alt=""></a>
-                    <h4><a href="#" title="#">Carlos Salda&ntilde;a</a></h4>
-                </li>
-                <li>
-                    <a href="#" title="#" class="img-container"><img src="img/slide2_small.png" alt=""></a>
-                    <h4><a href="#" title="#">Frederick Lozano</a></h4>
-                </li>
-                <li>
-                    <a href="#" title="#" class="img-container"><img src="img/slide3_small.png" alt=""></a>
-                    <h4><a href="#" title="#">Hosmel Quintana</a></h4>
-                </li>
-                <li>
-                    <a href="#" title="#" class="img-container"><img src="img/slide4_small.png" alt=""></a>
-                    <h4><a href="#" title="#">River Martinez</a></h4>
-                </li>
-                <li>
-                    <a href="#" title="#" class="img-container"><img src="img/slide5_small.png" alt=""></a>
-                    <h4><a href="#" title="#">Samuel Guti&eacute;rrez</a></h4>
-                </li>
-            </ul>
-        </div>
-        <div id="post">
-            <h3>Top 5 Posts</h3>
-            <ul>
-                <?php for ($i=1; $i <= 5; $i++) { ?>
-                <li>
-                    <a href="#" title="#" class="img-container"><img src="img/slide1_small.png" alt=""></a>
-                    <h4><a href="#" title="#">Titulo del post</a></h4>
-                </li>
-                <?php } ?>
-            </ul>
-        </div>
-    </section>
-</section>
+</div>
 <footer>
     <?php require_once 'includes/footer.php'; ?>
 </footer>
+</div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>
 $(function() {
