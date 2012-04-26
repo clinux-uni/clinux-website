@@ -39,20 +39,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* Tecnicas de limpieza de elementos flotantes */
-.limpiar:after {
-	content:"";
-	display:block;
-	height:0;
-	clear:both;
-	visibility:hidden;
+img {
+    /*box-sizing: border-box;*/
+    display: block;
+    width: 100%;
 }
-.limpiar {
-	display:inline-block;
-}
-.limpiar {
-	display:block;
-}
-* html .limpiar {
-	height:1px;
+strong {
+    font-weight: 700;
 }
