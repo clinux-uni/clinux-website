@@ -29,14 +29,12 @@
         </div>
     </div>
     <section id="articles">
-        <?php for ($i=1; $i <= 2; $i++) { ?>
         <article>
             <h2><a href="#" title="#">Flisol 2012</a></h2>
-            <time datetime="2001-05-15 19:00">28 Abril, 2012</time>
+            <time datetime="2001-05-15 19:00">26 Abril, 2012</time>
             <a href="#" title="#" class="img-container"><img src="img/flisol_600.jpg" alt="Imagen de pruebaa"></a>
             <p>El Festival Latinoamericano de Instalación de Software Libre es el evento de software libre más importante en América Latina. En esta ocasión, se llevará a cabo el Sábado 28 de Abril del 2012, desde las 8:00 hasta las 3:00pm en la Universidad Centroamericana UCA.</p>
         </article>
-        <?php } ?>
     </section>
 </div>
 <footer>
