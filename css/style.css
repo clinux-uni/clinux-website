@@ -1,8 +1,8 @@
 @import url("libs/reset.css");
-/*for font in ubuntub ubuntul ubuntum arista20 arista20a
-    @font-face
-        font-family font
-        src url(fonts/font.ttf) format("truetype")*/
+@font-face {
+  font-family: cosmicalien;
+  src: url("fonts/cosmicalien.ttf") format("truetype");
+}
 body {
   background: url("../img/bg-body.jpg");
   font: 100% arial;
@@ -45,7 +45,11 @@ header h1 {
   width: 200px;
 }
 header h2 {
+  color: #aaa;
+  font: 2em cosmicalien;
   float: left;
+  margin-left: 50px;
+  text-shadow: 1px 1px 4px #555;
 }
 .left {
   float: left;
