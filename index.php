@@ -25,7 +25,7 @@
         </nav>
         <div id="logo-web">
             <a class="img-container"><img src="" alt=""></a>
-            <p>Costrucci&oacute;n libre para la internet</p>
+            <p>Construcci&oacute;n libre para la internet</p>
         </div>
     </div>
     <section id="articles">
