@@ -69,6 +69,6 @@ Puedes encontrar una definición rápida aquí: Entendiendo el Modelo - Vista - 
 
 ============================
 
-	NOTA: Recordar que el directorio de apache (/srv/http) deve tener los perisos para ser leible por todos lo usuarios de la maquina y www-data.
+	NOTA: Recordar que el directorio de apache (/srv/http) deve tener los perisos para ser leible almenos para el usuario www-data.
 
 ============================
