@@ -3,6 +3,8 @@ CakePHP
 
 Esto es lo que necesitas:
 
+========================================================
+
 1. Servidor web funcionando.
 ============================
 Asumiremos que estás usando Apache, aunque las instrucciones para otros servidores son similares. Igual tendremos que ajustar un poco la configuración inicial, pero todos los pasos son sencillos. La mayor parte de nosotros podrá tener CakePHP funcionando sin tocar nada en su configuración.
@@ -64,5 +66,8 @@ Si estás familiarizado con la programación orientada a objetos, mucho mejor. A
 Puedes encontrar una definición rápida aquí: Entendiendo el Modelo - Vista - Controlador. No tengas miedo, sólo es media página.
 (http://book.cakephp.org/2.0/es/cakephp-overview/understanding-model-view-controller.html)
 
+============================
+
 	NOTA: Recordar que el directorio de apache (/srv/http) deve tener los perisos para ser leible por todos lo usuarios de la maquina y www-data.
 
+============================
