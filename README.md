@@ -47,9 +47,9 @@ Edita ahora este fichero y verás un array definido en la variable $default que 
 	    'persistent' => false,
 	    'host' => 'localhost',
 	    'port' => '',
-	    'login' => 'cakeBlog',
-	    'password' => 'c4k3-rUl3Z',
-	    'database' => 'cake_blog_tutorial',
+	    'login' => 'mysql_ueser',
+	    'password' => 'mysql_pass',
+	    'database' => 'db_name',
 	    'schema' => '',
 	    'prefix' => '',
 	    'encoding' => ''
@@ -71,4 +71,43 @@ Puedes encontrar una definición rápida aquí: Entendiendo el Modelo - Vista - 
 
 NOTA: Recordar que el directorio de apache (/srv/http) deve tener los perisos para ser leible almenos para el usuario www-data.
 
+========================================================
+--------------------------------------------------------
+
+CakePHP Configuracion basica
 ============================
+
+* Configurar una cadena personalizada (o "salt") para su uso en los hashes de seguridad.
+==============================================================================
+El string de seguridad se utiliza en la generación de 'hashes'. 
+El valor por defecto debe ser cambiado y escribe cualquier cosa diferente. Cualquier cosa vale. 
+Para cambiarlo vete a la línea 203 del fichero /app/Config/core.php y verás algo así:
+
+	/**
+ 	 * A random string used in security hashing methods.
+ 	 */
+	Configure::write('Security.salt', 'pl345e-P45s_7h3*S@l7!');
+
+* Configurar de un número personalizado (o "seed") para usar en el cifrado.
+===========================================================================
+El número 'seed' se utiliza para encriptar y desencriptar cadenas. 
+Cambia el valor por defecto en el ficharo /app/Config/core.php línea 208. 
+No importa qué numero pongas, que sea difícil de adivinar.
+
+	/**
+ 	 * A random numeric string (digits only) used to encrypt/decrypt strings.
+ 	 */
+	Configure::write('Security.cipherSeed', '7485712659625147843639846751');
+
+* Asignar acceso de escritura a Cake, a su directorio tmp.
+==========================================================
+Para asignar permisos al directorio app/Tmp, la mejor forma es ver qué usuario está ejecutando el servidor web 
+(<?php echo 'whoami'; ?>) y cambiar el directorio para que el nuevo propietario sea el usuario que ejecuta el servidor web.
+
+En un sistema *nix esto se hace así:
+
+	$ chown -R www-data app/tmp
+
+Suponiendo que www-data sea el usuario que ejecuta tu servidor web (en otras versiones de *unix como fedora, el usuario suele llamarse 'apache').
+
+Si CakePHP no puede escribir en este directorio, te informará de ello en la página de bienvenida, siempre que tengas activado el modo depuración, por defecto está activo.
