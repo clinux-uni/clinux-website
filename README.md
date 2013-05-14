@@ -64,11 +64,11 @@ Si estás familiarizado con la programación orientada a objetos, mucho mejor. A
 
 4. Conocimiento sobre patrón MVC.
 =================================
-Puedes encontrar una definición rápida aquí: Entendiendo el Modelo - Vista - Controlador. No tengas miedo, sólo es media página.
-(http://book.cakephp.org/2.0/es/cakephp-overview/understanding-model-view-controller.html)
+Puedes encontrar una definición rápida aquí: Entendiendo el Modelo - Vista - Controlador (http://book.cakephp.org/2.0/es/cakephp-overview/understanding-model-view-controller.html)
+. No tengas miedo, sólo es media página.
 
 ============================
 
-	NOTA: Recordar que el directorio de apache (/srv/http) deve tener los perisos para ser leible almenos para el usuario www-data.
+NOTA: Recordar que el directorio de apache (/srv/http) deve tener los perisos para ser leible almenos para el usuario www-data.
 
 ============================
