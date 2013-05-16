@@ -1,6 +1,6 @@
 # CakePHP
 
-__Esto es lo que necesitas:__
+Esto es lo que necesitas:	
 
 ## Servidor web funcionando.
 
@@ -34,7 +34,7 @@ Si estás familiarizado con la programación orientada a objetos, mucho mejor. A
 
 Puedes encontrar una definición rápida aquí: Entendiendo el __Modelo - Vista - Controlador__ http://book.cakephp.org/2.0/es/cakephp-overview/understanding-model-view-controller.html.
 
-* NOTA: Recordar que el directorio de apache deve tener los perisos para ser leible almenos para el usuario www-data.
+* __NOTA__: Recordar que el directorio de apache deve tener los perisos para ser leible almenos para el usuario www-data.
 
 ========================================================
 --------------------------------------------------------
@@ -85,7 +85,7 @@ El número __seed__ se utiliza para encriptar y desencriptar cadenas. Cambia el 
 
 	Configure::write('Security.cipherSeed', '7485712659625147843639846751');
 
-## Asignar acceso de escritura a CakePHP, a su directorio __/tmp__.
+## Acceso de CakePHP a su directorio __/tmp__.
 
 Para asignar permisos al directorio __/app/Tmp__, la mejor forma es ver qué usuario está ejecutando el servidor web. 
 Se puede saber el usuario con el siguiente script:
