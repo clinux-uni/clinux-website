@@ -28,12 +28,14 @@
  */
 	//Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 	# String de la ruta del controlador que se ejecuta en '/' ('base')
+	# Dirreccionamiento al controlador del homepage
 	Router::connect('/', array('controller' => 'home', 'action' => 'index', 'home'));
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
 	//Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
-	# String de la ruta para el resto de los controladores que se ejecutan en el siguiente uri luego de base
+	# String de la ruta para el resto de los controladores que se ejecutan en el siguiente uri luego de base.
+	# por convencion lo que sera parte de la url para cualquier cosa que no el homepage
 	Router::connect('/home/*', array('controller' => 'home', 'action' => 'index'));
 
 /**
