@@ -1,3 +1,24 @@
+
+CLINUX.UNI.EDU.NI
+==================
+http://clinux.uniedu.ni/
+-------------------------
+
+Pagina web de la Comunidad Linux UNI - CLINUX.
+
+En esta pagina corre:
+
+* [Apache](http://www.apache.org/)
+* [PHP 5.x](http://php.net/)
+* [MariaDB](https://mariadb.org/)
+* [CakePHP](http://cakephp.org/)
+* [NodeJS](http://nodejs.org/)
+* [Coffeescript](http://coffeescript.org/)
+* [Fundation](http://foundation.zurb.com/)
+
+========================================================
+--------------------------------------------------------
+
 # CakePHP
 
 Esto es lo que necesitas:	
@@ -8,8 +29,10 @@ __Apache__, tendremos que ajustar un poco la configuración inicial, pero todos 
 
 ## Descargar la última versión de CakePHP.
 
-Se puede descargar en la web del proyecto en __github__: https://github.com/cakephp/cakephp/tags y descargar/descomprimir la última versión de la rama 2.0
-También puedes clonar el repositorio usando __git__: __git clone git://github.com/cakephp/cakephp.git__
+Se puede descargar en la web del proyecto en [github](https://github.com/cakephp/cakephp/tags) y descargar/descomprimir la última versión de la rama 2.0
+También puedes clonar el repositorio usando __git__: 
+
+	git clone git://github.com/cakephp/cakephp.git
 
 Tendriamos algo asi:
 
@@ -32,9 +55,9 @@ Si estás familiarizado con la programación orientada a objetos, mucho mejor. A
 
 ## Conocimiento sobre patrón MVC.
 
-Puedes encontrar una definición rápida aquí: Entendiendo el __Modelo - Vista - Controlador__ http://book.cakephp.org/2.0/es/cakephp-overview/understanding-model-view-controller.html.
+Puedes encontrar una definición rápida aquí: Entendiendo el [Modelo-Vista-Controlador](http://book.cakephp.org/2.0/es/cakephp-overview/understanding-model-view-controller.html).
 
-* __NOTA__: Recordar que el directorio de apache deve tener los perisos para ser leible almenos para el usuario www-data.
+> Recordar que el directorio de apache deve tener los perisos para ser leible almenos para el usuario www-data.
 
 ========================================================
 --------------------------------------------------------
@@ -43,7 +66,11 @@ Puedes encontrar una definición rápida aquí: Entendiendo el __Modelo - Vista 
 
 ## Crear una base de datos.
 
-Con cualquier gestor de base de datos se creara una base de datos, la creacion de la base de datos es necesario para el funcionamiento del framework aunque no la uses. Para la pagina de la __Comunidad Linux UNI - CLINUX__ llamaremos a la base de datos __clinux_db__.
+Con cualquier gestor de base de datos se creara una base de datos, la creacion de la base de datos es necesario para el funcionamiento del framework aunque no la uses. Para la pagina de la __Comunidad Linux UNI - CLINUX__ llamaremos a la base de datos __clinux_db__. 
+
+De ser necesario aqui esta el comando de mysql para crear un base de datos desde la linea de conmando:
+
+	mysql> CREATE DATABASE menagerie;
 
 ## Configurando la Base de Datos.
 
@@ -68,10 +95,13 @@ Debería quedarte algo similar a esto:
 	    'encoding' => ''
 	);
 
-Ten en cuenta que los campos __login__, __password__, __database__ tendrás que cambiarlos por tu usuario de MySQL, tu contraseña de MySQL y el nombre que le diste a la Base de Datos. Guarda este fichero.
-Ahora ya podrás acceder a la página inicial de bienvenida de CakePHP en tu máquina.
+> Ten en cuenta que los campos __login__, __password__, __database__ tendrás que cambiarlos por tu usuario de MySQL, tu contraseña de MySQL y el nombre que le diste a la Base de Datos. 
 
-## Configurar __salt__ para los hashes de seguridad.
+Guarda este fichero. Ahora ya podrás acceder a la página inicial de bienvenida de CakePHP en tu máquina.
+
+## Configuraciones y requerimiento antes de empesar a desarrollar
+
+# Configurar __salt__ para los hashes de seguridad.
 
 __satl__ es un string de seguridad que se utiliza para generar __hashes__. __satl__ se encuentra en el archivo __/app/Config/core.php__, el valor por defecto debe ser cambiado y escribe cualquier cosa diferente.
 
@@ -79,13 +109,13 @@ El archivo verse algo así:
 
 	Configure::write('Security.salt', 'pl345e-P45s_7h3*S@l7!');
 
-## Configurar __seed__ para el cifrado.
+# Configurar __seed__ para el cifrado.
 
 El número __seed__ se utiliza para encriptar y desencriptar cadenas. Cambia el valor por defecto en el archivo __/app/Config/core.php__. No importa qué numero pongas, el que sea sera difícil de adivinar.
 
 	Configure::write('Security.cipherSeed', '7485712659625147843639846751');
 
-## Acceso de CakePHP a su directorio __/tmp__.
+# Acceso de CakePHP a su directorio __/tmp__.
 
 Para asignar permisos al directorio __/app/Tmp__, la mejor forma es ver qué usuario está ejecutando el servidor web. 
 Se puede saber el usuario con el siguiente script:
@@ -102,5 +132,39 @@ Suponiendo que __www-data__ sea el usuario que ejecuta tu servidor web (en otras
 
 Si CakePHP no puede escribir en este directorio, te informará de ello en la página de bienvenida, siempre que tengas activado el modo depuración, por defecto está activo.
 
-## Configurar pagina de inicio
+# Installar NodeJS
+	
+Hay un diverso número de maneras de instalar __Node.js__ en __Linux__, las instrucciones para la instalación de __Node.js__ en distribuciones Linux específicas utilizando un gestor de paquetes se puede encontrar en: 
+
+	Instalación __Node.js__ a través del gestor de paquete.
+	https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
+
+Deberia de ser tan facil como:
+
+	Archlinux
+	pacman -S nodejs
+
+Si tu distribucion no aparece en la lista o quieres una instalarion mas personalizada puedes recurrir a la documentacion oficial de instalacion de NodeJS en GitHub:
+
+	https://github.com/joyent/node/wiki/Installation
+
+Escribe __node -v__ or __npm -v__ en la línea de comandos para ver que ha sido instalado correctamente.
+
+# Instalar CofeeScript
+
+Para instalar CofeeScript, primero asegúrese de que tiene una copia de trabajo de la última versión estable de __Node.js__ y __npm__ (el Gestor de paquetes de Node). A continuación, puede instalar CoffeeScript con npm:
+
+	sudo npm install -g coffee-script
+
+> Puedes quetar __-g__ si no deseas instalar de manera global.
+
+Escribe __coffee -v__ en la línea de comandos para ver que ha sido instalado correctamente.
+
+> Para el reconicimiento de la sintaxis de CofeeScript en SublimeText2 [Control.sublime-package](https://github.com/Xavura/CoffeeScript-Sublime-Plugin#installation)
+
+# Intalar Fundation
+
+Para instalar __Fundation__ no hace falta mas que acceder a la pagina de [Fundation](http://foundation.zurb.com/) descargarlo, descompeimirlo y copiar los archibos al direcctorio de __CSS__ en __app/webroot/css__ y todo listo para empezar.
+
+# Configurar rutas de aceso
 
