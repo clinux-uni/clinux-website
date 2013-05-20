@@ -97,9 +97,7 @@ Debería quedarte algo similar a esto:
 
 Guarda este fichero. Ahora ya podrás acceder a la página inicial de bienvenida de CakePHP en tu máquina.
 
-## Configuraciones y requerimiento antes de empesar a desarrollar
-
-# Configurar __salt__ para los hashes de seguridad.
+## Configurar __salt__ para los hashes de seguridad.
 
 __satl__ es un string de seguridad que se utiliza para generar __hashes__. __satl__ se encuentra en el archivo __/app/Config/core.php__, el valor por defecto debe ser cambiado y escribe cualquier cosa diferente.
 
@@ -113,7 +111,7 @@ El número __seed__ se utiliza para encriptar y desencriptar cadenas. Cambia el 
 
 	Configure::write('Security.cipherSeed', '7485712659625147843639846751');
 
-# Acceso de CakePHP a su directorio __/tmp__.
+## Acceso de CakePHP a su directorio __/tmp__.
 
 Para asignar permisos al directorio __/app/Tmp__, la mejor forma es ver qué usuario está ejecutando el servidor web. 
 Se puede saber el usuario con el siguiente script:
@@ -130,7 +128,7 @@ Suponiendo que __www-data__ sea el usuario que ejecuta tu servidor web (en otras
 
 Si CakePHP no puede escribir en este directorio, te informará de ello en la página de bienvenida, siempre que tengas activado el modo depuración, por defecto está activo.
 
-# Installar NodeJS
+## Installar NodeJS
 	
 Hay un diverso número de maneras de instalar __Node.js__ en __Linux__, las instrucciones para la instalación de __Node.js__ en distribuciones Linux específicas utilizando un gestor de paquetes se puede encontrar en: 
 
@@ -148,7 +146,7 @@ Si tu distribucion no aparece en la lista o quieres una instalarion mas personal
 
 Escribe __node -v__ or __npm -v__ en la línea de comandos para ver que ha sido instalado correctamente.
 
-# Instalar CofeeScript
+## Instalar CofeeScript
 
 Para instalar CofeeScript, primero asegúrese de que tiene una copia de trabajo de la última versión estable de __Node.js__ y __npm__ (el Gestor de paquetes de Node). A continuación, puede instalar CoffeeScript con npm:
 
@@ -160,9 +158,9 @@ Escribe __coffee -v__ en la línea de comandos para ver que ha sido instalado co
 
 > Para el reconicimiento de la sintaxis de CofeeScript en SublimeText2 [Control.sublime-package](https://github.com/Xavura/CoffeeScript-Sublime-Plugin#installation)
 
-# Intalar Fundation
+## Intalar Fundation
 
 Para instalar __Fundation__ no hace falta mas que acceder a la pagina de [Fundation](http://foundation.zurb.com/) descargarlo, descompeimirlo y copiar los archibos al direcctorio de __CSS__ en __app/webroot/css__ y todo listo para empezar.
 
-# Configurar rutas de aceso
+## Configurar rutas de aceso
 
