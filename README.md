@@ -1,10 +1,8 @@
 
-CLINUX.UNI.EDU.NI
-==================
-http://clinux.uniedu.ni/
--------------------------
-
-Pagina web de la Comunidad Linux UNI - CLINUX.
+[CLINUX.UNI.EDU.NI](http://clinux.uniedu.ni/)
+=============================================
+Pagina web de la Comunidad Linux UNI - CLINUX
+---------------------------------------------
 
 En esta pagina corre:
 
