@@ -62,6 +62,17 @@ Puedes encontrar una definición rápida aquí: Entendiendo el [Modelo-Vista-Con
 
 # CakePHP Configuracion basica
 
+## Instalar un Gestor de Base de Datos
+
+La mayoria de los gestores de bases de datos libre en especial __MySQL__ y __MariaDB__ (Sucesor del anterior) se puden instlar desde los repocitorios oficiales de la mayoria de las distribuciones __Linux__. Para mas informacion acerca de como instalarlo desde el manejador de paquetes de tu distribucion visita [MariaDB Repositories](https://downloads.mariadb.org/mariadb/repositories/).
+
+Usarias algo asi:
+
+	ArchLinux
+	# pacman -S mariadb
+
+> Si tu distribucion no aparece en las intrucciones de MariaDB Repositories puedes ir la pagina oficial de __MariaDB__ y descargar el binario, el fuente o le paquete en [Downloads](MariaDB Repositories).
+
 ## Crear una base de datos.
 
 Con cualquier gestor de base de datos se creara una base de datos, la creacion de la base de datos es necesario para el funcionamiento del framework aunque no la uses. Para la pagina de la __Comunidad Linux UNI - CLINUX__ llamaremos a la base de datos __clinux_db__. 
@@ -138,7 +149,7 @@ Hay un diverso número de maneras de instalar __Node.js__ en __Linux__, las inst
 Deberia de ser tan facil como:
 
 	Archlinux
-	pacman -S nodejs
+	# pacman -S nodejs
 
 Si tu distribucion no aparece en la lista o quieres una instalarion mas personalizada puedes recurrir a la documentacion oficial de instalacion de NodeJS en GitHub:
 
@@ -150,7 +161,7 @@ Escribe __node -v__ or __npm -v__ en la línea de comandos para ver que ha sido 
 
 Para instalar CofeeScript, primero asegúrese de que tiene una copia de trabajo de la última versión estable de __Node.js__ y __npm__ (el Gestor de paquetes de Node). A continuación, puede instalar CoffeeScript con npm:
 
-	sudo npm install -g coffee-script
+	$ sudo npm install -g coffee-script
 
 > Puedes quetar __-g__ si no deseas instalar de manera global.
 
