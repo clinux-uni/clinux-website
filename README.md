@@ -86,7 +86,7 @@ De ser necesario aqui esta el comando de mysql para crear un base de datos desde
 CakePHP utiliza un archivo centralizado para manejar la conexion con la base de datos, y utiliza un archivo por base de datos aunque por lo general se conecta a una unica base de datos puede haber el caso de que se conecte con diferentes bases de datos por tanto tendria de un archivo por bases de datos sean o no del mismo gestor de bases de datos.Por defecto CakePHP esta pensado para conectarse con MySQL.
 
 El archivo se encuentra en __/app/Config/__. CakePHP tambien cuenta con un archivo muestra a partir del cual podemos configurar nuestra propia coneccion. 
-Solo se tiene que cambiar el nombre del archivo __/app/Config/database.php.default__ por __/app/Config/database.php__ hemos eliminado el __.default__ del final.
+Solo se tiene que cambiar el nombre del archivo __/app/Config/database.php.default__ por __/app/config/database.php__ hemos eliminado el __.default__ del final.
 Edita ahora este archivo y verás un array definido en la variable __$default__ que contiene varios campos, modifica esos campos para que se correspondan con tu configuración actual de acceso a la Base de Datos. 
 
 Debería quedarte algo similar a esto:
@@ -141,10 +141,7 @@ Si CakePHP no puede escribir en este directorio, te informará de ello en la pá
 
 ## Installar NodeJS
 	
-Hay un diverso número de maneras de instalar __Node.js__ en __Linux__, las instrucciones para la instalación de __Node.js__ en distribuciones Linux específicas utilizando un gestor de paquetes se puede encontrar en: 
-
-	Instalación __Node.js__ a través del gestor de paquete.
-	https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
+Hay un diverso número de maneras de instalar __Node.js__ en __Linux__, las instrucciones para la instalación de __Node.js__ en distribuciones Linux específicas utilizando un gestor de paquetes se puede encontrar en [NodePackage](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
 
 Deberia de ser tan facil como:
 
@@ -155,7 +152,7 @@ Si tu distribucion no aparece en la lista o quieres una instalarion mas personal
 
 	https://github.com/joyent/node/wiki/Installation
 
-Escribe __node -v__ or __npm -v__ en la línea de comandos para ver que ha sido instalado correctamente.
+> Escribe __node -v__ or __npm -v__ en la línea de comandos para ver que ha sido instalado correctamente.
 
 ## Instalar CofeeScript
 
@@ -165,7 +162,7 @@ Para instalar CofeeScript, primero asegúrese de que tiene una copia de trabajo 
 
 > Puedes quetar __-g__ si no deseas instalar de manera global.
 
-Escribe __coffee -v__ en la línea de comandos para ver que ha sido instalado correctamente.
+> Escribe __coffee -v__ en la línea de comandos para ver que ha sido instalado correctamente.
 
 > Para el reconicimiento de la sintaxis de CofeeScript en SublimeText2 [Control.sublime-package](https://github.com/Xavura/CoffeeScript-Sublime-Plugin#installation)
 
