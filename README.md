@@ -14,6 +14,8 @@ En esta pagina corre:
 * [Coffeescript](http://coffeescript.org/)
 * [Fundation](http://foundation.zurb.com/)
 
+> Sientanse libre de agregar lo que crean conveniente para la eficacia del tutorial/historico de conf.
+
 ========================================================
 --------------------------------------------------------
 
@@ -161,14 +163,11 @@ Para instalar CofeeScript, primero asegúrese de que tiene una copia de trabajo 
 	$ sudo npm install -g coffee-script
 
 > Puedes quetar __-g__ si no deseas instalar de manera global.
-
 > Escribe __coffee -v__ en la línea de comandos para ver que ha sido instalado correctamente.
-
 > Para el reconicimiento de la sintaxis de CofeeScript en SublimeText2 [Control.sublime-package](https://github.com/Xavura/CoffeeScript-Sublime-Plugin#installation)
 
 ## Intalar Fundation
 
-Para instalar __Fundation__ no hace falta mas que acceder a la pagina de [Fundation](http://foundation.zurb.com/) descargarlo, descompeimirlo y copiar los archibos al direcctorio de __CSS__ en __app/webroot/css__ y todo listo para empezar.
+Para instalar __Fundation__ no hace falta mas que acceder a la pagina de [Fundation](http://foundation.zurb.com/) descargar la version de CSS, descompeimirlo y copiar los archibos al direcctorio de __CSS__ en __app/webroot/css__ y todo listo para empezar.
 
 ## Configurar rutas de aceso
-
