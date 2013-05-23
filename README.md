@@ -141,7 +141,7 @@ Suponiendo que __www-data__ sea el usuario que ejecuta tu servidor web (en otras
 
 Si CakePHP no puede escribir en este directorio, te informará de ello en la página de bienvenida, siempre que tengas activado el modo depuración, por defecto está activo.
 
-## Installar NodeJS
+## Instalar NodeJS
 	
 Hay un diverso número de maneras de instalar __Node.js__ en __Linux__, las instrucciones para la instalación de __Node.js__ en distribuciones Linux específicas utilizando un gestor de paquetes se puede encontrar en [NodePackage](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
 
@@ -171,3 +171,10 @@ Para instalar CofeeScript, primero asegúrese de que tiene una copia de trabajo 
 Para instalar __Fundation__ no hace falta mas que acceder a la pagina de [Fundation](http://foundation.zurb.com/) descargar la version de CSS, descompeimirlo y copiar los archibos al direcctorio de __CSS__ en __app/webroot/css__ y todo listo para empezar.
 
 ## Configurar rutas de aceso
+
+Para que crear nestra propia ruta de acceso, es decir que ingresar a la url de nuestra pagina __http://localhost/clinux-website/__ nos muestre la pagina que desarrollaremos y no la pagina de bienvenida de la framework.
+
+Para lograr esto simplemente editamos el archivo de rutas que ya trae __CakePHP__ que se encuentra en __app/Config/routes.php__. Dentro en archivo solo editamos las lineas que inician con **Router**.
+
+La primera:
+**Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));**
