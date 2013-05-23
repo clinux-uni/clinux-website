@@ -176,5 +176,45 @@ Para que crear nestra propia ruta de acceso, es decir que ingresar a la url de n
 
 Para lograr esto simplemente editamos el archivo de rutas que ya trae __CakePHP__ que se encuentra en __app/Config/routes.php__. Dentro en archivo solo editamos las lineas que inician con **Router**.
 
-La primera:
-**Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));**
+### La primera '/':
+
+	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+
+Este la linea hace la redireccion a la raiz es decir llama a la pagina que aparecera directamente en inicio (> __Inicio__: nombre de dominio o la ruta absoluta al direcctorio de la pagina). Como lo escifica del primer parametro que hace referencia a la raiz del directorio de la pagina.
+
+A nosotros nos interesa el parametro __'controller'__ que apunta el controlador __'pages'__ que es el que se ejecuta en el __inicio /*__, y el parametro __'action'__ que el nombre de la funcion del controlador que se ejecuta. Ya sea que editemos el contrador y la funcion que y la funcion o creoemos nuestro propio controlador con nuestra funcion aqui es donde se configura esta ruta.
+
+Para nuestra pagina crearemos nuestra propia pagina, quedaria algo asi:
+
+	Router::connect('/', array('controller' => 'home', 'action' => 'index', 'home'));
+
+### La segunda '/*':
+
+	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
+
+Esta enruta todo lo demas es decir todo lo que venga luego de la raiz, lo que seria el contenido del directorio de al pagina, el resto de los controladores, etc.
+
+Igualmente el primer parametro hacer referencia al inicio de la ruta __'/pages/*'__ que en este caso empieza luego del controlador que se ejecuta en el inicio, el parametro __'controller'__ que igual que el anterior hace referencia a un controlador y el parametro __'action'__ que hace referencia a la accion que se ejecutara.
+
+El nuestro quedaria algo asi:
+
+	Router::connect('/home/*', array('controller' => 'home', 'action' => 'index'));
+
+**Listo!**, tenemos configuradas nuestras rutas. *¡Es hora de empesar a desarrollar!**
+
+========================================================
+--------------------------------------------------------
+
+# Empesar a Desarrollar
+
+## Funcionalidades
+
+* Inicio
+
+## Layouts
+
+Los __Layouts__ contiene el código de presentación que envuelve una vista. Cualquier cosa que quieras ver en todas tus vistas debería ser colocado en un __Layout__.
+
+Los __Layouts__ se encuentran en __/app/View/Layouts__. El __Layouts__ por defecto de CakePHP puede ser sobrescrito por por tu propio diseño en __/app/View/Layouts/default.ctp__.
+
+La linea __$this->fetch('content');__ le indicara a CakePHP donde colocara el codigo de las vistas dentro de los __Layouts__.

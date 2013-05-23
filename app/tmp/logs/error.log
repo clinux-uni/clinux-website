@@ -33,3 +33,12 @@ Stack Trace:
 #3 /srv/http/clinux-website/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
 #4 /srv/http/clinux-website/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2013-05-23 03:32:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clinux-website/css/app.css
+Stack Trace:
+#0 /srv/http/clinux-website/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
