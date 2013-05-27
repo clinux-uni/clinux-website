@@ -209,6 +209,8 @@ El nuestro quedaria algo asi:
 
 ## Funcionalidades
 
+Lista de funcionalidades de o secciones de nuestra pagina:
+
 * Inicio
 
 ## Layouts
