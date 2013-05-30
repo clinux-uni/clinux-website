@@ -1,0 +1,87 @@
+Estructura por Cuatro Esquinas, no importa el tamaño
+====================================================
+
+El equipo detrás de marco de trabajo frontal responsivo más avanzado del mundo, [Foundation](http://foundation.zurb.com/), le trae consejos, recursos y mejores prácticas para el lanzamiento de sitios web con éxito en [el futuro responsivo](http://www.youtube.com/watch?v=zKjphi1MBIc).
+
+===
+---
+
+## Responsive Design
+
+No es ningún secreto que el tráfico web móvil [pronto dejará](http://techland.time.com/2011/03/02/report-by-2015-mobile-internet-usage-will-increase-by-factor-of-26/) al tráfico de escritorio hecho polvo antes de lo que piensas. Sólo en los EE.UU., cuentas móviles de [20% del tráfico web](http://allthingsd.com/intromessage/). Más de la mitad de todo el tráfico en [Asia y África](http://royal.pingdom.com/2012/05/08/mobile-web-traffic-asia-tripled/) proviene de móvil. Además de eso, hay miles y miles de dispositivos que se pueden utilizar para acceder a la Web. Diseño de sitios web responsivo que funcionan en todos los dispositivos es cómo podemos hacer frente a ese desafío.
+
+Diseño Resposivo, un término acuñado por [Ethan Marcotte](http://alistapart.com/article/responsive-web-design), le permite construir un sitio fluido que puede encogerse o estirarse para adaptarse a cualquier tamaño de pantalla en cualquier dispositivo. Con las rejillas fluidas, imágenes flexibles y consultas de los medios de comunicación, que no tenemos que improvisar un sitio web independiente, móvil dedicado. Sólo tenemos que construir uno, que es un ahorro de tiempo. Podemos crear prototipos rápidamente y actuar con rapidez en el código de producción.
+
+Proyectos responsivos nos permite __construir cuatro esquinas, sin importar el tamaño__, en lugar de un dispositivo específico.
+
+# Diseño Responsivo
+
+> Hay muchos beneficios para el diseño responsivo. Éstos son algunos de ellos:
+
+* Prototipos y repeticiónes
+
+Con un marco de trabajo responsibo, puede crear un prototipo y repetirlo en sus diseños con rapidez, reduciendo de manera significativa en el desarrollo de su producto. Puede crear diagramas funcionales codificados que permiten ver cómo sus diseños podrían funcionar en un escritorio, un teléfono o una tableta.
+
+* Funciona en todos los dispositivos
+
+Un marco de trabajo responsibo permite a sus diseños anidarse correctamente en dispositivos más pequeños y expandir por completo en los más grandes. Mediante el diseño responsibo, usted no tiene que preocuparse si sus diseños no funciona en todos los dispositivos.
+
+* Futuro amistoso
+
+Diseño de sitios reponsibo le permite estar preparado para los dispositivos que ni siquiera existen todavía, porque ya has asegurado de que su producto va a escalar a las cuatro esquinas.
+
+# Los tres principios de diseño de respuesta
+Cuando Ethan Marcotte acuñó el término Responsive Design, también llegar a tres principios que son válidas en la actualidad.
+
+## Rejilla Fluida
+
+> Una cuadrícula flexible, una rejilla fluida que no se haya fijado y es fácilmente adaptable a cualquier tamaño de la pantalla.
+
+## Medios flexibles
+Los medios sin medida en píxeles de ancho fijo y se puede cambiar el tamaño de forma proporcional por el navegador.
+
+# Obtención de una rejilla fluida
+
+> Es la base para sus diseños sensibles.
+
+El término rejilla lleva a la rigidez mental, un sistema inflexible y estancada que no se doble o se mueva. Sin embargo, los sistemas de rejilla tienen una variedad de beneficios útiles.
+
+Sin embargo, cuando se trata de diseño reponsivo, no estamos hablando de vieja escuela rejilla 960px-locked. Lo que necesitamos es una __rejilla fluida__, que es flexible y basado en porcentajes en lugar de píxeles. Las columnas determinan la anchura de donde se coloca el contenido, mientras que el contenido determinará la altura. Este tipo de rejilla puede escalar hacia arriba o hacia abajo, dependiendo del tamaño de la pantalla del dispositivo que está siendo muestra en pantalla.
+
+Como Ethan Marcotte [ha dicho](http://www.lukew.com/ff/entry.asp?1353), una base flexible es crucial para el diseño de respuesta sea eficaz.
+
+## Beneficios de la construcción con rejilla
+
+> Construir con rejilla pone a su diseño en una gran ventaja:
+
+* Uniformidad
+
+Una rejilla garantiza la coherencia entre las páginas web, lo que reduce los errores de codificación de CSS. También ayuda con la colocación HTML fiable.
+
+* Menos código
+
+Con un sistema de rejillas, usted no está codificado a partir de cero, lo que ahorra mucho tiempo. Otra gran ayuda es que la rejilla hace que la iteración sea más rápido y más fácil.
+
+* Estructuras de control
+
+Una rejilla no sólo nos permite organizar los elementos, sino que también ofrece control sobre lo visual y la estructura de la página.
+
+## Conceptos rejilla
+
+> Aquí hay algunos conceptos que debe conocer cuando se trata de una red de respuesta.
+
+* Modelo de caja
+
+Un modelo de caja es parte de un navegador. Se recomienda el uso de caja de tamaño para cambiar el tipo de modelo de caja utiliza un navegador. Esto permite la compatibilidad con navegadores antiguos.
+
+* Ordenamiento fuente
+
+Ordenamiento fuente le permite tener el orden de su sitio móvil y su margen de beneficio será diferente de la red en su página.
+
+* Rejillas semánticas
+
+Con una rejilla semántica, puede adjuntar propiedades a los elementos de la rejilla de su margen de beneficio que son semánticamente correcto. Una red semántica requiere un preprocesador, como Sass o Less.
+
+* Anidación
+
+Una rejilla fluida permite sub-rejillas dentro de la rejilla existente o anidación. Esto permite diseños más complejos y visualmente interesante.
