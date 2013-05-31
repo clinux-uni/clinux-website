@@ -6,96 +6,58 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <title>CLINUX:{{$title}}</title>
-        
+        <meta name="description" content="Sitio web de la Comunidad Linux UNI.">
         {{ HTML::style('css/normalize.css') }}
         <!-- If you are using CSS version, add this -->
         {{ HTML::style('css/foundation.css') }}
-        {{-- HTML::style('css/app.css') --}}
-
+        {{ HTML::style('css/app.css') }}
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         {{ HTML::script('js/vendor/custom.modernizr.js') }}
     </head>
     <body>
-        <!-- Navigation -->
-        <nav class="top-bar">
-            <!-- Title Area --> 
-            <ul class="title-area">
-                <li class="name">
-                    <h1><a href="#">Top Bar Title</a></h1>
-                </li>
-                <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-            </ul>
- 
-            <section class="top-bar-section">
-
-                <!-- Right Nav Section -->
-                <ul class="right">
-                    <li class="divider"></li>
-                    <li class="has-dropdown">
-                        <a href="#">Main Item 1</a>
-                        <ul class="dropdown">
-                            <li><label>Section Name</label></li>
-                            <li class="has-dropdown">
-                                <a href="#" class="">Has Dropdown, Level 1</a>
-                                <ul class="dropdown">
-                                    <li><a href="#">Dropdown Options</a></li>
-                                    <li><a href="#">Dropdown Options</a></li>
-                                    <li><a href="#">Level 2</a></li>
-                                    <li><a href="#">Subdropdown Option</a></li>
-                                    <li><a href="#">Subdropdown Option</a></li>
-                                    <li><a href="#">Subdropdown Option</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Dropdown Option</a></li>
-                            <li><a href="#">Dropdown Option</a></li>
-                            <li class="divider"></li>
-                            <li><label>Section Name</label></li>
-                            <li><a href="#">Dropdown Option</a></li>
-                            <li><a href="#">Dropdown Option</a></li>
-                            <li><a href="#">Dropdown Option</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">See all &rarr;</a></li>
-                        </ul>
+        <header>
+            <!-- Navigation -->
+            <nav class="top-bar">
+                <!-- Title Area --> 
+                <ul class="title-area">
+                    <li class="name">
+                        <h1><a href="#">Top Bar Title</a></h1>
                     </li>
-                    <li class="divider"></li>
-                    <li><a href="#">Main Item 2</a></li>
-                    <li class="divider"></li>
-                    <li class="has-dropdown">
-                        <a href="#">Main Item 3</a>
-                        <ul class="dropdown">
-                            <li><a href="#">Dropdown Option</a></li>
-                            <li><a href="#">Dropdown Option</a></li>
-                            <li><a href="#">Dropdown Option</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">See all &rarr;</a></li>
-                        </ul>
-                    </li>
+                    <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
                 </ul>
-            </section>
-        </nav>
-        <!-- End Top Bar -->
+                <section class="top-bar-section">
+                    <!-- Right Nav Section -->
+                    <ul class="right">
+                        <li class="divider"></li>
+                        <li><a href="#">Main Item 1</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Main Item 2</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Main Item 3</a></li>
+                    </ul>
+                </section>
+            </nav>
+            <!-- End Top Bar -->
+        </header>
 
-        <div class="row">
-            <div class="large-12 columns">
-
-                <!-- Content Slider -->
-                <div class="row">
-                    <div class="large-12 hide-for-small">
-                        <div id="featured" data-orbit>
-                            <img src="http://placehold.it/1200x500&text=Slide Image 1" alt="slide image">
-                            <img src="http://placehold.it/1200x500&text=Slide Image 2" alt="slide image">
-                            <img src="http://placehold.it/1200x500&text=Slide Image 3" alt="slide image">
-                        </div>
-                    </div>
+        <section>
+            <!-- Content Slider -->
+            <div class="large-12 hide-for-small">
+                <div id="featured" data-orbit>
+                    <img src="http://placehold.it/1200x500&text=Slide Image 1" alt="slide image">
+                    <img src="http://placehold.it/1200x500&text=Slide Image 2" alt="slide image">
+                    <img src="http://placehold.it/1200x500&text=Slide Image 3" alt="slide image">
                 </div>
-                <!-- End Content Slider -->
+            </div>
+            <!-- End Content Slider -->
 
-                <!-- Mobile Header -->
-                <div class="row">
-                    <div class="large-12 columns show-for-small">
-                        <img src="http://placehold.it/1200x700&text=Mobile Header">
-                    </div>
-                </div><br>
-                <!-- End Mobile Header -->
+            <!-- Mobile Header -->
+            <div class="large-12 columns show-for-small">
+                <img src="http://placehold.it/1200x700&text=Mobile Header">
+            </div>
+            <br>
+            <!-- End Mobile Header -->
+        </section>
 
                 <div class="row">
                     <div class="large-12 columns">
@@ -128,7 +90,6 @@
                 </footer>
                 <!-- End Footer -->
  
-            </div>
         </div>
         
         <script>

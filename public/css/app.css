@@ -1,37 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600italic);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-
 body {
-    margin:0;
-    font-family:'Lato', sans-serif;
-    text-align:center;
-    color: #999;
+    font-family: 'Ubuntu','Lato','Josefin Sans','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue','Helvetica','Arial','Lucida Grande','sans-serif';
 }
 
-.welcome {
-   width: 300px;
-   height: 300px;
-   position: absolute;
-   left: 50%;
-   top: 50%; 
-   margin-left: -150px;
-   margin-top: -150px;
+.head-line {
+    height: 20px;
+    position: absolute;
+    top: 0;
+    background-color: #43a1e1;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-a, a:visited {
-    color:#FF5949;
-    text-decoration:none;
+.top-bar { margin: 0 auto; 
 }
+.orbit-slide-number { display: none; }
 
-a:hover {
-    text-decoration:underline;
-}
-
-ul li {
-    display:inline;
-    margin:0 1.2em;
-}
-
-p {
-    margin:2em 0;
-    color:#555;
+.orbit-bullets {
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
