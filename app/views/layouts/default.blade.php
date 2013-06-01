@@ -5,8 +5,12 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <title>CLINUX:{{$title}}</title>
         <meta name="description" content="Sitio web de la Comunidad Linux UNI.">
+        <title>CLINUX:{{$title}}</title>
+
+        <link rel="icon" type="image/png" href="/img/favicon.png"/>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
         {{ HTML::style('css/normalize.css') }}
         <!-- If you are using CSS version, add this -->
         {{ HTML::style('css/foundation.css') }}
