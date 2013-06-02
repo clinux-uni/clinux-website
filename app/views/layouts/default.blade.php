@@ -59,9 +59,14 @@
             <div class="large-12 columns show-for-small">
                 <img src="http://placehold.it/1200x700&text=Mobile Header">
             </div>
-            <br>
             <!-- End Mobile Header -->
         </section>
+        <section id="header-bottom">
+            <div class="row">
+                <p class="mini-header">{{date('M d, Y')}}</p>
+            </div>
+        </section>
+
 
                 <div class="row">
                     <div class="large-12 columns">
