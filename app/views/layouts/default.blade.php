@@ -25,7 +25,7 @@
                 <!-- Title Area --> 
                 <ul class="title-area">
                     <li class="name">
-                        <h1><a href="#">Top Bar Title</a></h1>
+                        <h1><a href="#">CLINUX</a></h1>
                     </li>
                     <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
                 </ul>
@@ -45,65 +45,37 @@
         </header>
 
         <section>
-            <!-- Content Slider -->
-            <div class="large-12 hide-for-small">
-                <div id="featured" data-orbit>
-                    <img src="http://placehold.it/1200x500&text=Slide Image 1" alt="slide image">
-                    <img src="http://placehold.it/1200x500&text=Slide Image 2" alt="slide image">
-                    <img src="http://placehold.it/1200x500&text=Slide Image 3" alt="slide image">
-                </div>
-            </div>
-            <!-- End Content Slider -->
-
-            <!-- Mobile Header -->
-            <div class="large-12 columns show-for-small">
-                <img src="http://placehold.it/1200x700&text=Mobile Header">
-            </div>
-            <!-- End Mobile Header -->
-        </section>
-        <section id="header-bottom">
-            <div class="row">
-                <p class="mini-header">{{date('M d, Y')}}</p>
-            </div>
+            <!-- body content here -->
+            @yield('content')
+            <!-- End Content -->
         </section>
 
 
-                <div class="row">
-                    <div class="large-12 columns">
-                        <div class="row">
-                            <!-- body content here -->
-                            @yield('content')
-
+        <section>
+            <!-- Footer -->
+            <footer>
+                <div class="large-12 columns"><hr>
+                    <div class="row">
+                        <div class="large-6 columns">
+                            <p>&copy; Copyright no one at all. Go to town.</p>
+                        </div>
+                        <div class="large-6 small-12 columns">
+                            <ul class="inline-list right">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                                <li><a href="#">Link 4</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <!-- End Content -->
- 
-                <!-- Footer -->
-                <footer class="row">
-                    <div class="large-12 columns"><hr>
-                        <div class="row">
-                            <div class="large-6 columns">
-                                <p>&copy; Copyright no one at all. Go to town.</p>
-                            </div>
-                            <div class="large-6 small-12 columns">
-                                <ul class="inline-list right">
-                                    <li><a href="#">Link 1</a></li>
-                                    <li><a href="#">Link 2</a></li>
-                                    <li><a href="#">Link 3</a></li>
-                                    <li><a href="#">Link 4</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-                <!-- End Footer -->
- 
-        </div>
+            </footer>
+            <!-- End Footer -->
+        </section>
         
         <script>
             document.write('<script src=' +
-            ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+            ('__proto__' in {} ? '<?=Request::root()?>/js/vendor/zepto' : '<?=Request::root()?>/js/vendor/jquery') +
             '.js><\/script>')
         </script>
         {{ HTML::script('js/foundation/foundation.js') }}

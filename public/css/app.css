@@ -1,21 +1,33 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600italic);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
 body {
-    font-family: 'Ubuntu','Lato','Josefin Sans','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue','Helvetica','Arial','Lucida Grande','sans-serif';
+    /*font-family: 'Ubuntu','Lato','Josefin Sans','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue','Helvetica','Arial','Lucida Grande','sans-serif';*/
+}
+
+.top-bar .name h1 a {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #999;
 }
 
 .head-line {
     height: 20px;
-    position: absolute;
-    top: 0;
-    background-color: #43a1e1;
+    background-color: #43A1E1;
     width: 100%;
-    margin-bottom: 20px;
 }
 
-.top-bar { 
-    margin: 0 auto; 
+.top-bar {
+    text-align: center;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 100%;
+    -webkit-box-shadow: 0 1px 5px -1px #333;
+    -moz-box-shadow: 0 1px 5px -1px #333;
+    box-shadow: 0 1px 5px -1px #333;
+    clear: both;
+    z-index: 9999 !important;
 }
 
 .orbit-slide-number { 
@@ -28,8 +40,8 @@ body {
     left: 10px;
 }
 
-#header-bottom {
-    background: #1399bd;
+.header-bottom {
+    background: #43A1E1;
     padding: 15px 0;
     overflow: hidden;
     font-size: 14px;
