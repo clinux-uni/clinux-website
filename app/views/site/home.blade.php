@@ -1,9 +1,7 @@
-@extends('layouts.default')
+@extends('layouts.home')
 
 @section('content')
-
 <div class="head-line"></div>
-
 <section>
     <!-- Content Slider -->
     <div class="large-12 hide-for-small">

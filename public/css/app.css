@@ -1,13 +1,31 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600italic);
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-
-body {
-    /*font-family: 'Ubuntu','Lato','Josefin Sans','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue','Helvetica','Arial','Lucida Grande','sans-serif';*/
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@font-face {
+    font-family: 'proxima-nova';
+    src: url('../font/proxima-nova.eot'); /* IE9 Compat Modes */
+    src: url('../font/proxima-nova.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/proxima-nova.woff') format('woff'), /* Modern Browsers */
+         url('../font/proxima-nova.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../font/proxima-nova.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'museo-slab';
+    src: url('../font/museo-slab.eot'); /* IE9 Compat Modes */
+    src: url('../font/museo-slab.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/museo-slab.woff') format('woff'), /* Modern Browsers */
+         url('../font/museo-slab.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../font/museo-slab.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
+body {
+    font-family: proxima-nova,'Montserrat',serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: museo-slab,'Josefin Slab',serif;
+}
 .top-bar .name h1 a {
-    font-family: 'Lato', sans-serif;
+    /*font-family: 'Lato', sans-serif;*/
     text-align: center;
     color: #999;
 }
@@ -20,6 +38,7 @@ body {
 
 .top-bar {
     text-align: center;
+    vertical-align:text-center;
     background-color: #fff;
     margin: 0 auto;
     width: 100%;
@@ -28,6 +47,12 @@ body {
     box-shadow: 0 1px 5px -1px #333;
     clear: both;
     z-index: 9999 !important;
+    height: 60px;
+}
+
+.top-bar-section li a:not(.button) {
+    color: #999;
+    background-color: #fff;
 }
 
 .orbit-slide-number { 

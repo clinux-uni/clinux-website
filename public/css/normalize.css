@@ -68,7 +68,7 @@ audio:not([controls]) {
 html {
     background: #fff; /* 1 */
     color: #000; /* 2 */
-    font-family: sans-serif; /* 3 */
+    /*font-family: sans-serif; /* 3 */
     -ms-text-size-adjust: 100%; /* 4 */
     -webkit-text-size-adjust: 100%; /* 4 */
 }
@@ -168,7 +168,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace, serif;
+    /*font-family: monospace, serif;*/
     font-size: 1em;
 }
 
@@ -282,7 +282,7 @@ button,
 input,
 select,
 textarea {
-    font-family: inherit; /* 1 */
+    /*font-family: inherit; /* 1 */
     font-size: 100%; /* 2 */
     margin: 0; /* 3 */
 }

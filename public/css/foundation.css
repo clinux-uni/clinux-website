@@ -1,3 +1,32 @@
+@font-face {
+  font-family: '[set]Foundicons';
+  src: url('../fonts/[set]_foundicons.eot');
+  src: url('../fonts/[set]_foundicons.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/[set]_foundicons.woff') format('woff'),
+       url('../fonts/[set]_foundicons.ttf') format('truetype'),
+       url('../fonts/[set]_foundicons.svg#[set]Foundicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+[class*="foundicon-"] {
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: inherit;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+ 
+[class*="foundicon-"]:before {
+  font-family: "[set]Foundicons";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
 *,
 *:before,
 *:after {
@@ -14,7 +43,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;*/
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -1098,7 +1127,7 @@ a {
 
 /* Default paragraph styles */
 p {
-  font-family: inherit;
+  /*font-family: inherit;*/
   font-weight: normal;
   font-size: 1em;
   line-height: 1.6;
@@ -1111,7 +1140,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;*/
   font-weight: bold;
   font-style: normal;
   color: #222222;
@@ -1165,7 +1194,7 @@ small {
   line-height: inherit; }
 
 code {
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  /*font-family: Consolas, "Liberation Mono", Courier, monospace;*/
   font-weight: bold;
   color: #7f0a0c; }
 
@@ -1177,7 +1206,8 @@ dl {
   line-height: 1.6;
   margin-bottom: 1.25em;
   list-style-position: outside;
-  font-family: inherit; }
+  /*font-family: inherit; */
+}
 
 /* Unordered Lists */
 ul li ul,
@@ -1355,7 +1385,7 @@ button, .button {
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
-  font-family: inherit;
+  /*font-family: inherit;*/
   font-weight: bold;
   line-height: 1;
   margin: 0 0 1.25em;
@@ -1703,7 +1733,7 @@ input[type="time"],
 input[type="url"],
 textarea {
   background-color: white;
-  font-family: inherit;
+  /*font-family: inherit;*/
   border: 1px solid #cccccc;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -3117,7 +3147,7 @@ form.custom {
   z-index: 101;
   top: 0;
   left: 2.5%;
-  font-family: inherit;
+  /*font-family: inherit;*/
   font-weight: normal;
   width: 95%; }
 
@@ -3517,7 +3547,7 @@ kbd {
   border-style: solid;
   border-width: 1px;
   margin: 0;
-  font-family: "Consolas", "Menlo", "Courier", monospace;
+  /*font-family: "Consolas", "Menlo", "Courier", monospace;*/
   font-size: 0.9375em;
   padding: 0.125em 0.25em 0em;
   -webkit-border-radius: 3px;
