@@ -1,110 +1,30 @@
 @extends('layouts.home')
 
 @section('content')
-<div class="head-line"></div>
-<section>
-    <!-- Content Slider -->
-    <div class="large-12 hide-for-small">
-        <div id="featured" data-orbit>
-            <img src="http://placehold.it/1200x500&text=Slide Image 1" alt="slide image">
-            <img src="http://placehold.it/1200x500&text=Slide Image 2" alt="slide image">
-            <img src="http://placehold.it/1200x500&text=Slide Image 3" alt="slide image">
-        </div>
+<!-- NOTE: each "window" is a section element with class .window -->
+<section id="0" class="window">
+    <div class="content">
+        <h1>
+            <a href="{{URL::to('/')}}">
+                <img src="{{URL::to('/')}}/img/tux-term.png" alt="Comunidad Linux UNI">
+            </a>
+        </h1>
     </div>
-    <!-- End Content Slider -->
-
-    <!-- Mobile Header -->
-    <div class="large-12 columns show-for-small">
-        <img src="http://placehold.it/1200x700&text=Mobile Header">
-    </div>
-    <!-- End Mobile Header -->
 </section>
+@stop
 
-<section class="header-bottom">
-    <!-- Base Header Content -->
-    <div class="row">
-        <p class="mini-header">{{date('M d, Y')}}</p>
-    </div>
-    <!-- End Base Header Content -->
-</section>
-
-<div class="row">
-    <div class="large-12 columns">
-        <div class="row">
-            <!-- Shows -->
-            <div class="large-4 small-6 columns">
-              	<h4>Upcoming Shows</h4>
-              	<hr>
-            	<div class="row">
-            		<div class="large-1 column">
-            			<img src="http://placehold.it/50x50&amp;text=[img]">
-            		</div>
-            		<div class="large-9 columns">
-            			<h5><a href="#">Venue Name</a></h5>
-            			<h6 class="subheader show-for-small">Doors at 00:00pm</h6>
-            		</div>
-            	</div>
-            	<hr>
-              	<div class="hide-for-small">
-                	<div class="row">
-                  		<div class="large-1 column">
-                    		<img src="http://placehold.it/50x50&amp;text=[img]">
-                  		</div>
-                  		<div class="large-9 columns">
-                    		<h5 class="subheader"><a href="#">Venue Name</a></h5>
-                  		</div>
-                	</div>
-                	<hr>
-                	<div class="row">
-                  		<div class="large-1 column">
-                    		<img src="http://placehold.it/50x50&amp;text=[img]">
-                  		</div>
-                  		<div class="large-9 columns">
-                    		<h5 class="subheader"><a href="#">Venue Name</a></h5>
-                  		</div>
-                	</div>
-                	<hr>
-                	<div class="row">
-                  		<div class="large-1 column">
-                    		<img src="http://placehold.it/50x50&amp;text=[img]">
-                  		</div>
-                  		<div class="large-9 columns">
-                    		<h5 class="subheader"><a href="#">Venue Name</a></h5>
-                  		</div>
-                	</div>
-              	</div>
-            </div>
-            <!-- End Shows -->
-             
-             
-            <!-- Image -->
-            <div class="large-4 small-6 columns">
-              	<img src="http://placehold.it/300x465&amp;text=Image">
-            </div>
-            <!-- End Image -->
-             
-             
-            <!-- Feed -->
-            <div class="large-4 small-12 columns">
-              	<h4>Blog</h4>
-              	<hr>
-              	<div class="panel">
-                	<h5><a href="#">Post Title 1</a></h5>
-                	<h6 class="subheader">
-                  		Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Suspendisse ultrices ornare tempor...
-                	</h6>
-                	<h6><a href="#">Read More »</a></h6>
-              	</div>
-              	<div class="panel hide-for-small">
-                	<h5><a href="#">Post Title 2 »</a></h5>
-              	</div>
-              	<div class="panel hide-for-small">
-                	<h5><a href="#">Post Title 3 »</a></h5>
-              	</div>
-              	<a href="#" class="right">Go To Blog »</a>
-            </div>
-            <!-- End Feed -->
-        </div>
-    </div>
-</div>
+@section('assetjs')
+<script>
+$(document).ready(function(){
+    var $windows = $('.window');
+    $windows.windows({
+        snapping: true,
+        snapSpeed: 500,
+        snapInterval: 1100,
+        onScroll: function(s){},
+        onSnapComplete: function($el){},
+        onWindowEnter: function($el){}
+    });
+});
+</script>
 @stop

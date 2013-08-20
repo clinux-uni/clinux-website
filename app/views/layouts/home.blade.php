@@ -8,90 +8,32 @@
         <meta name="description" content="Sitio web de la Comunidad Linux UNI.">
         <title>CLINUX:{{$title}}</title>
         
+        <!-- Favicon -->
         <link rel="icon" type="image/png" href="{{URL::to('')}}/img/favicon.png"/>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        {{ HTML::style('css/normalize.css') }}
-        <!-- If you are using CSS version, add this -->
-        {{ HTML::style('css/foundation.css') }}
+        
+        <!-- Estilos -->
         {{ HTML::style('css/app.css') }}
-        {{ HTML::style('css/general_enclosed_foundicons.css') }}
-        {{ HTML::script('js/vendor/custom.modernizr.js') }}
+        
+        <!-- Windowjs -->
+        {{ HTML::style('css/window.css') }}
+        
+        @yield('assetcss')
     </head>
     <body>
-        <header>
-            <!-- Navigation -->
-            <nav class="top-bar">
-                <!-- Title Area --> 
-                <ul class="title-area">
-                    <li class="name">
-                        <h1><a href="{{URL::to('/')}}">{{HTML::image('img/nav_title.png')}}</a></h1>
-                    </li>
-                    <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-                </ul>
-                <section class="top-bar-section">
-                    <!-- Right Nav Section -->
-                    <ul class="right">
-                        <li><a href="#">Main Item 1</a></li>
-                        <li><a href="#">Main Item 2</a></li>
-                        <li><a href="#">Main Item 3</a></li>
-                    </ul>
-                </section>
-            </nav>
-            <!-- End Top Bar -->
-        </header>
 
-        <section>
-            <!-- body content here -->
-            @yield('content')
-            <!-- End Content -->
-        </section>
+        <!-- body content here -->
+        @yield('content')
+        <!-- End Content -->
 
-
-        <section>
-            <!-- Footer -->
-            <footer>
-                <div class="large-12 columns"><hr>
-                    <div class="row">
-                        <div class="large-6 columns">
-                            <p>&copy; Copyright no one at all. Go to town.</p>
-                        </div>
-                        <div class="large-6 small-12 columns">
-                            <ul class="inline-list right">
-                                <li><a href="#">Link 1</a></li>
-                                <li><a href="#">Link 2</a></li>
-                                <li><a href="#">Link 3</a></li>
-                                <li><a href="#">Link 4</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!-- End Footer -->
-        </section>
+        <!-- JQuery -->
+        {{ HTML::script('js/jquery.js') }}
         
-        <script>
-            document.write('<script src=' +
-            ('__proto__' in {} ? '<?=Request::root()?>/js/vendor/zepto' : '<?=Request::root()?>/js/vendor/jquery') +
-            '.js><\/script>')
-        </script>
-        {{ HTML::script('js/foundation/foundation.js') }}
-        {{ HTML::script('js/foundation/foundation.alerts.js') }}
-        {{ HTML::script('js/foundation/foundation.clearing.js') }}
-        {{ HTML::script('js/foundation/foundation.cookie.js') }}
-        {{ HTML::script('js/foundation/foundation.dropdown.js') }}
-        {{ HTML::script('js/foundation/foundation.forms.js') }}
-        {{ HTML::script('js/foundation/foundation.joyride.js') }}
-        {{ HTML::script('js/foundation/foundation.magellan.js') }}
-        {{ HTML::script('js/foundation/foundation.orbit.js') }}
-        {{ HTML::script('js/foundation/foundation.placeholder.js') }}
-        {{ HTML::script('js/foundation/foundation.reveal.js') }}
-        {{ HTML::script('js/foundation/foundation.section.js') }}
-        {{ HTML::script('js/foundation/foundation.tooltips.js') }}
-        {{ HTML::script('js/foundation/foundation.topbar.js') }}
-        <script>
-            $(document).foundation();
-        </script>
+        <!-- Windowjs -->
+        {{ HTML::script('js/window.js') }}
+        
+        @yield('assetjs')
         <!-- End Footer -->
     </body>
 </html>
