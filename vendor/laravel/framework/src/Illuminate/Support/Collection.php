@@ -36,9 +36,11 @@ class Collection implements ArrayAccess, ArrayableInterface, Countable, Iterator
 	 */
 	public static function make($items)
 	{
+		if (is_null($items)) return new static;
+
 		if ($items instanceof Collection) return $items;
 
-		return new static($items);
+		return new static(is_array($items) ? $items : array($items));
 	}
 
 	/**
@@ -297,7 +299,7 @@ class Collection implements ArrayAccess, ArrayableInterface, Countable, Iterator
 	/**
 	 * Merge items with the collection items.
 	 *
-	 * @param  \Illuminate\Support\Collection|\Illuminate\Support\Contracts\ArrayableInterface|array
+	 * @param  \Illuminate\Support\Collection|\Illuminate\Support\Contracts\ArrayableInterface|array  $items
 	 * @return \Illuminate\Support\Collection
 	 */
 	public function merge($items)
@@ -327,6 +329,78 @@ class Collection implements ArrayAccess, ArrayableInterface, Countable, Iterator
 	public function slice($offset, $length = null, $preserveKeys = false)
 	{
 		return new static(array_slice($this->items, $offset, $length, $preserveKeys));
+	}
+
+	/**
+	 * Take the first or last {$limit} items.
+	 *
+	 * @param  int  $limit
+	 * @return \Illuminate\Support\Collection
+	 */
+	public function take($limit = null)
+	{
+		if ($limit < 0) return $this->slice($limit, abs($limit));
+
+		return $this->slice(0, $limit);
+	}
+
+	/**
+	 * Get an array with the values of a given key.
+	 *
+	 * @param  string  $value
+	 * @param  string  $key
+	 * @return array
+	 */
+	public function lists($value, $key = null)
+	{
+		$results = array();
+
+		foreach ($this->items as $item)
+		{
+			$itemValue = $this->getListValue($item, $value);
+
+			// If the key is "null", we will just append the value to the array and keep
+			// looping. Otherwise we will key the array using the value of the key we
+			// received from the developer. Then we'll return the final array form.
+			if (is_null($key))
+			{
+				$results[] = $itemValue;
+			}
+			else
+			{
+				$itemKey = $this->getListValue($item, $key);
+
+				$results[$itemKey] = $itemValue;
+			}
+		}
+
+		return $results;
+	}
+
+	/**
+	 * Get the value of a list item object.
+	 *
+	 * @param  mixed  $item
+	 * @param  mixed  $key
+	 * @return mixed
+	 */
+	protected function getListValue($item, $key)
+	{
+		return is_object($item) ? $item->{$key} : $item[$key];
+	}
+
+	/**
+	 * Concatenate values of a given key as a string.
+	 *
+	 * @param  string  $value
+	 * @param  string  $glue
+	 * @return string
+	 */
+	public function implode($value, $glue = null)
+	{
+		if (is_null($glue)) return implode($this->lists($value));
+
+		return implode($glue, $this->lists($value));
 	}
 
 	/**

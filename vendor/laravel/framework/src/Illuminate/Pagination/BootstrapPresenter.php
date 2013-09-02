@@ -76,7 +76,7 @@ class BootstrapPresenter {
 			// for the link. These views use the "Twitter Bootstrap" styles by default.
 			if ($this->currentPage == $page)
 			{
-				$pages[] = '<li class="active"><a href="#">'.$page.'</a></li>';
+				$pages[] = '<li class="active"><span>'.$page.'</span></li>';
 			}
 			else
 			{
@@ -136,9 +136,7 @@ class BootstrapPresenter {
 	 */
 	public function getAdjacentRange()
 	{
-		$start = $this->currentPage - 3;
-
-		return $this->getPageRange($start, $this->currentPage + 3);
+		return $this->getPageRange($this->currentPage - 3, $this->currentPage + 3);
 	}
 
 	/**
@@ -176,7 +174,7 @@ class BootstrapPresenter {
 		// when that is the case. Otherwise, we will give it an active "status".
 		if ($this->currentPage <= 1)
 		{
-			return '<li class="disabled"><a href="#">'.$text.'</a></li>';
+			return '<li class="disabled"><span>'.$text.'</span></li>';
 		}
 		else
 		{
@@ -199,7 +197,7 @@ class BootstrapPresenter {
 		// that is available, so we will make it the "next" link style disabled.
 		if ($this->currentPage >= $this->lastPage)
 		{
-			return '<li class="disabled"><a href="#">'.$text.'</a></li>';
+			return '<li class="disabled"><span>'.$text.'</span></li>';
 		}
 		else
 		{
@@ -216,7 +214,7 @@ class BootstrapPresenter {
 	 */
 	public function getDots()
 	{
-		return '<li class="disabled"><a href="#">...</a></li>';
+		return '<li class="disabled"><span>...</span></li>';
 	}
 
 	/**

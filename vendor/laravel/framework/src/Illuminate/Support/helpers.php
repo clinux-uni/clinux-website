@@ -40,11 +40,12 @@ if ( ! function_exists('app_path'))
 	/**
 	 * Get the path to the application folder.
 	 *
+	 * @param   string  $path
 	 * @return  string
 	 */
-	function app_path()
+	function app_path($path = '')
 	{
-		return app('path');
+		return app('path').($path ? '/'.$path : $path);
 	}
 }
 
@@ -63,6 +64,30 @@ if ( ! function_exists('array_add'))
 		if ( ! isset($array[$key])) $array[$key] = $value;
 
 		return $array;
+	}
+}
+
+if ( ! function_exists('array_build'))
+{
+	/**
+	 * Build a new array using a callback.
+	 *
+	 * @param  array  $array
+	 * @param  \Closure  $callback
+	 * @return array
+	 */
+	function array_build($array, Closure $callback)
+	{
+		$results = array();
+
+		foreach ($array as $key => $value)
+		{
+			list($innerKey, $innerValue) = call_user_func($callback, $key, $value);
+
+			$results[$innerKey] = $innerValue;
+		}
+
+		return $results;
 	}
 }
 
@@ -314,7 +339,7 @@ if ( ! function_exists('array_set'))
 	 * @param  array   $array
 	 * @param  string  $key
 	 * @param  mixed   $value
-	 * @return void
+	 * @return array
 	 */
 	function array_set(&$array, $key, $value)
 	{
@@ -338,6 +363,23 @@ if ( ! function_exists('array_set'))
 		}
 
 		$array[array_shift($keys)] = $value;
+
+		return $array;
+	}
+}
+
+if ( ! function_exists('array_sort'))
+{
+	/**
+	 * Sort the array using the given Closure.
+	 *
+	 * @param  array  $array
+	 * @param  \Closure  $callback
+	 * @return array
+	 */
+	function array_sort($array, Closure $callback)
+	{
+		return Illuminate\Support\Collection::make($array)->sortBy($callback)->all();
 	}
 }
 
@@ -363,9 +405,9 @@ if ( ! function_exists('base_path'))
 	 *
 	 * @return string
 	 */
-	function base_path()
+	function base_path($path = '')
 	{
-		return app()->make('path.base');
+		return app()->make('path.base').($path ? '/'.$path : $path);
 	}
 }
 
@@ -588,6 +630,26 @@ if ( ! function_exists('object_get'))
 	}
 }
 
+if ( ! function_exists('preg_replace_sub'))
+{
+	/**
+	 * Replace a given pattern with each value in the array in sequentially.
+	 *
+	 * @param  string  $pattern
+	 * @param  array   $replacements
+	 * @param  string  $subject
+	 * @return string
+	 */
+	function preg_replace_sub($pattern, &$replacements, $subject)
+	{
+		return preg_replace_callback($pattern, function($match) use (&$replacements)
+		{
+			return array_shift($replacements);
+
+		}, $subject);
+	}
+}
+
 if ( ! function_exists('public_path'))
 {
 	/**
@@ -595,9 +657,9 @@ if ( ! function_exists('public_path'))
 	 *
 	 * @return string
 	 */
-	function public_path()
+	function public_path($path = '')
 	{
-		return app()->make('path.public');
+		return app()->make('path.public').($path ? '/'.$path : $path);
 	}
 }
 
@@ -683,9 +745,9 @@ if ( ! function_exists('storage_path'))
 	 *
 	 * @return  string
 	 */
-	function storage_path()
+	function storage_path($path = '')
 	{
-		return app('path.storage');
+		return app('path.storage').($path ? '/'.$path : $path);
 	}
 }
 

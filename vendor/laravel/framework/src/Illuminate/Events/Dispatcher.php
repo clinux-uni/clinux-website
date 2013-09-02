@@ -40,7 +40,7 @@ class Dispatcher {
 	 */
 	public function __construct(Container $container = null)
 	{
-		$this->container = $container;
+		$this->container = $container ?: new Container;
 	}
 
 	/**
@@ -73,7 +73,7 @@ class Dispatcher {
 	 */
 	protected function setupWildcardListen($event, $listener, $priority)
 	{
-		$this->wildcards[$event][] = $listener;
+		$this->wildcards[$event][] = $this->makeListener($listener);
 	}
 
 	/**
@@ -161,8 +161,8 @@ class Dispatcher {
 	 *
 	 * @param  string  $event
 	 * @param  mixed   $payload
-	 * @param  boolean $halt
-	 * @return void
+	 * @param  bool    $halt
+	 * @return array|null
 	 */
 	public function fire($event, $payload = array(), $halt = false)
 	{
@@ -259,7 +259,7 @@ class Dispatcher {
 	 * Register an event listener with the dispatcher.
 	 *
 	 * @param  mixed   $listener
-	 * @return void
+	 * @return mixed
 	 */
 	public function makeListener($listener)
 	{

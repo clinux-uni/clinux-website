@@ -1,9 +1,12 @@
-v0.8.4 (2013-xx-xx)
+v0.8.4 (2013-07-27)
 ===============================================================================
 
 - Added `DUMP` and `RESTORE` to the server profile for Redis 2.6.
 
 - Connection exceptions now report basic host details in their messages.
+
+- Allow `Predis\Connection\PhpiredisConnection` to use a random IP when a host
+  actually has several IPs (ISSUE #116).
 
 - __FIX__: allow `HMSET` when using a cluster of Redis nodes with client-side
   sharding or redis-cluster (ISSUE #106).
@@ -14,6 +17,9 @@ v0.8.4 (2013-xx-xx)
 
 - __FIX__: scripted commands falling back from `EVALSHA` to `EVAL` resulted in
   PHP errors when using a prefixed client (ISSUE #109).
+
+- __FIX__: `Predis\PubSub\DispatcherLoop` now works properly when using key
+  prefixing (ISSUE #114).
 
 
 v0.8.3 (2013-02-18)
