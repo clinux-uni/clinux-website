@@ -1,0 +1,40 @@
+* {
+	font-family: arial; 
+	margin: 0; 
+	padding: 0;
+
+}
+
+.banner {
+	background-color:#ccc;
+  	background-image: -moz-radial-gradient(center 45deg,circle cover, #ccc, #333);
+  	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%,800, from(#ccc), to(#333));
+  	background-image: radial-gradient(center 45deg,circle cover, #ccc, #333);
+	height: 300px;
+}
+
+.menu {
+	background: #a00; 
+	color: #fff; 
+	height: 30px; 
+	line-height: 30px;
+	letter-spacing: 1px; 
+	width:100%;
+}
+
+.content {
+	margin-top: 10px;
+}
+
+.menu-padding {
+	padding-top: 40px;
+}
+
+.content p {
+	margin-bottom: 20px;
+}
+
+.sticky {
+	position: fixed; 
+	top: 0;
+}
