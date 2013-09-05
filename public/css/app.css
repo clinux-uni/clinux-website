@@ -5,7 +5,49 @@
 
 }
 
-.banner {
+section, div {
+	display: block;
+}
+
+a:hover,
+a:focus {
+  	color: #2a6496;
+  	text-decoration: underline;
+}
+
+a:focus {
+  	outline: thin dotted #333;
+  	outline: 5px auto -webkit-focus-ring-color;
+  	outline-offset: -2px;
+}
+
+ul, menu, dir {
+	display: block;
+	list-style-type: disc;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+}
+
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+a:-webkit-any-link {
+	color: -webkit-link;
+	text-decoration: underline;
+	cursor: auto;
+}
+
+a {
+	color: #428bca;
+	text-decoration: none;
+}
+
+.bandera {
 	background-color:#ccc;
   	background-image: -moz-radial-gradient(center 45deg,circle cover, #ccc, #333);
   	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%,800, from(#ccc), to(#333));
@@ -14,16 +56,88 @@
 }
 
 .menu {
-	background: #a00; 
-	color: #fff; 
-	height: 30px; 
-	line-height: 30px;
-	letter-spacing: 1px; 
-	width:100%;
+	right: 0;
+	left: 0;
+	background-color: #f8f8f8;
+  	border-bottom: 5px solid #e7e7e7;
+  	min-height: 50px;
+  	margin-bottom: 20px;
+	height: 50px; 
 }
 
-.content {
-	margin-top: 10px;
+.contenedor {
+    max-width: 1170px;
+    padding-right: 15px;
+  	padding-left: 15px;
+  	margin-right: auto;
+  	margin-left: auto;
+}
+
+.contenedor > .cabecera-menu {
+    margin-right: 0;
+    margin-left: 0;
+    float: left;
+}
+
+ .contenedor > .colapso-menu {
+    margin-right: 0;
+    margin-left: 0;
+    float: right;
+ }
+
+.menu > .contenedor .titulo-menu {
+    margin-left: -15px;
+    color: #777777;
+    float: left;
+  	padding: 15px 15px;
+  	font-size: 18px;
+  	line-height: 20px;
+  	text-decoration: none;
+}
+
+.colapso-menu {
+	border-color: #e6e6e6;
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: 340px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.barra {
+	float: left;
+    margin: 0;
+    padding-left: 0;
+  	list-style: none;
+}
+
+.barra > li {
+    float: left;
+    position: relative;
+  	display: block;
+}
+
+.barra > li > a {
+	color: #777777;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 30px;
+    position: relative;
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+
+.barra > .activo > a,
+.barra > .activo > a:hover,
+.barra > .activo > a:focus {
+  	color: #555555;
+  	background-color: #e7e7e7;
 }
 
 .menu-padding {
@@ -37,4 +151,5 @@
 .sticky {
 	position: fixed; 
 	top: 0;
+	z-index: 1030;
 }
