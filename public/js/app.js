@@ -1,3 +1,6 @@
+
+$('.bandera').css('height', (screen.height-170));
+
 $(document).ready(function(){
     var menu = document.querySelector('.menu');
     var origOffsetY = menu.offsetTop;
