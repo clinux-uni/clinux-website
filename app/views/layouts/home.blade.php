@@ -13,6 +13,7 @@
 
 	  	<!-- CSS -->
 	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/app.css" />
+	  	<link rel="shortcut icon" href="{{URL::to('/')}}/img/favicon.png">
 	</head>
 	<body>
 		<!-- Wrap all page content here -->
@@ -27,7 +28,7 @@
 			        <div class="contenedor">
 			        	<!-- Titlulo de la Barra de Navegacion -->
 			          	<div class="cabecera-menu">
-			          		<a class="titulo-menu" href="{{URL::to('/')}}">CLINUX</a>
+			          		<a class="titulo-menu" href="{{URL::to('/')}}"><img src="{{URL::to('/')}}/img/3d-view.svg"></a>
 			          	</div>
 
 			          	<!-- Menu -->

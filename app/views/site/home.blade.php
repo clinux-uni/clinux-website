@@ -1,19 +1,27 @@
 @extends('layouts.home')
 
 @section('content')
-<div class="left post">
-	
-</div>
+<section class="post izq">
+	<div class="espaciador" style="height:15px;"></div>
+	<div class="nombre">
+		<h1>TITULO</h1>
+	</div>
+	<div class="miniatura">
+		<img src="{{URL::to('/')}}/img/linux-os.svg">
+	</div>
+</section>
 
-<div class="right post">
-	
-</div>
+<section class="post der">
+	<div class="espaciador" style="height:15px;"></div>
+	<div class="nombre">
+		<h1>TITULO</h1>
+	</div>
+	<div class="miniatura">
+		<img src="{{URL::to('/')}}/img/linux-os.svg">
+	</div>
+</section>
 
-<div class="left post">
-	
-</div>
+<section class="post"></section>
 
-<div class="right post">
-	
-</div>
+<section class="post"></section>
 @stop

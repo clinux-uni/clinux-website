@@ -64,10 +64,10 @@ p {
  }
 
 .menu > .contenedor .titulo-menu {
-    margin-left: -15px;
+    /*margin-left: -15px;*/
     color: #777777;
     float: left;
-  	padding: 15px 15px;
+  	padding: 8px 15px;
   	font-size: 18px;
   	line-height: 20px;
   	text-decoration: none;
@@ -128,10 +128,6 @@ p {
 	z-index: 1030;
 }
 
-.fixed {
-    
-}
-
 #envoltura {
     min-height: 100%;
     height: auto !important;
@@ -162,17 +158,52 @@ p {
 
 .post {
     display: inline-block;
-    width: 300px;
+    width: 340px;
     height: 450px;
-    margin: 10px 10px 10px 10px;
-    padding: 20px;
-
-    border-top: 15px solid #d8d8d8;
-    border-bottom: 50px solid #d8d8d8;
+    margin: 10px auto 10px 10px;
+    border: 1px solid #d8d8d8;
     background-color: #f5f5f5;
 
     -webkit-border-radius: 3px;
     border-radius: 3px;
     -webkit-transition: left .5s cubic-bezier(0.250,0.460,0.450,0.940),width .4s ease,padding .4s ease,box-shadow .4s ease,margin .4s ease,border .4s ease;
     transition: left .5s cubic-bezier(0.250,0.460,0.450,0.940),width .4s ease,padding .4s ease,box-shadow .4s ease,margin .4s ease,border .4s ease;
+}
+
+.der {
+    margin: 10px auto 10px 10px;
+}
+
+.izq {
+    margin: 10px 10px 10px auto;
+}
+
+.post .espaciador {
+    width: 100%;
+    background-color: #d8d8d8;
+}
+
+.post .nombre {
+    float: left;
+    top: 0;
+    z-index: 2000;
+    width: 240px;
+    height: 25px;
+    margin-left: 20px;
+    margin-right: 60px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #d8d8d8;
+    color: #ffffff;
+}
+
+.post .miniatura {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.post .miniatura img {
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
