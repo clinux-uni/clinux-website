@@ -8,10 +8,12 @@ $(document).ready(function(){
     function scroll() {
         if ($(window).scrollTop() >= origOffsetY) {
             $('.menu').addClass('sticky');
-            $('.content').addClass('menu-padding');
+            $('#alpie').show();
+            //$('.content').addClass('menu-padding');
         } else {
             $('.menu').removeClass('sticky');
-            $('.content').removeClass('menu-padding');
+            $('#alpie').hide();
+            //$('.content').removeClass('menu-padding');
         }  
     }
 

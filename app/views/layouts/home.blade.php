@@ -16,15 +16,15 @@
 	</head>
 	<body>
 		<!-- Wrap all page content here -->
-	    <div id="wrap">
+	    <section id="envoltura">
 			<!-- Cabecera and Barra de Navegacion -->
 	  		<header>
 	  			<!-- Bandera del Inicio / Cabecera -->
-	  			<section class="bandera"></section>
+	  			<div class="bandera"></div>
 	  			<!-- Barra de Navegacion -->
 	  			<nav class="menu">
 	  				<!-- Contenedor del Menu -->
-			        <section class="contenedor">
+			        <div class="contenedor">
 			        	<!-- Titlulo de la Barra de Navegacion -->
 			          	<div class="cabecera-menu">
 			          		<a class="titulo-menu" href="{{URL::to('/')}}">CLINUX</a>
@@ -39,7 +39,7 @@
 					            <li><a href="#contact">Contact</a></li>
 				            </ul>
 			          	</div>
-			        </section>
+			        </div>
 			    </nav>
 			</header>
 
@@ -47,14 +47,14 @@
 				@yield('content')
 	 		</section>
 		
-		</div>
+		</section>
 
 		<!-- Footer -->
-	    <div id="footer">
-	      	<div class="container">
-	        	<p class="text-muted credit">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+	    <section id="alpie" style="display:none;">
+	      	<div class="contenedor">
+	        	<p class="texto-callado creditos">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
 	      	</div>
-	    </div>
+	    </section>
 
 	  	<script src="{{URL::to('/')}}/js/jquery.js"></script>
 	  	<script src="{{URL::to('/')}}/js/app.js"></script>
