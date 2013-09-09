@@ -187,10 +187,9 @@ p {
     float: left;
     top: 0;
     z-index: 2000;
-    width: 240px;
+    width: 75%;
     height: 25px;
     margin-left: 20px;
-    margin-right: 60px;
     padding-top: 10px;
     padding-left: 10px;
     background-color: #d8d8d8;
