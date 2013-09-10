@@ -35,16 +35,16 @@
 			          	<div class="colapso-menu">
 			          		<!-- Barra de Menu -->
 				            <ul class="barra">
-					            <li class="activo"><a href="#">Home</a></li>
-					            <li><a href="#about">About</a></li>
-					            <li><a href="#contact">Contact</a></li>
+					            <li class="activo"><a href="#"><img src="{{URL::to('/')}}/img/globe.svg"></a></li>
+					            <li><a href="#about"><img src="{{URL::to('/')}}/img/about.svg"></a></li>
+					            <li><a href="#contact"><img src="{{URL::to('/')}}/img/email.svg"></a></li>
 				            </ul>
 			          	</div>
 			        </div>
 			    </nav>
 			</header>
 
-			<section class="contenedor">
+			<section class="sub-middle">
 				@yield('content')
 	 		</section>
 		

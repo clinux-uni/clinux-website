@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- The icon can be used freely in both personal and commercial projects with no attribution required, but always appreciated. 
+You may NOT sub-license, resell, rent, redistribute or otherwise transfer the icon without express written permission from iconmonstr.com -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   enable-background="new 0 0 512 512"
+   xml:space="preserve"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="email.svg"><metadata
+     id="metadata9"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs7" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="721"
+     id="namedview5"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="206"
+     inkscape:cy="206"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" /><path
+     id="email-10-icon"
+     d="m 16,3.1068 c 3.443883,0 6.681631,1.34112 9.116893,3.77631 2.435262,2.43518 3.776311,5.67293 3.776311,9.11689 0,3.44388 -1.341126,6.68163 -3.776311,9.11689 C 22.681631,27.552 19.443883,28.8932 16,28.8932 12.556117,28.8932 9.318369,27.552 6.883107,25.11689 4.447922,22.68163 3.106796,19.44388 3.106796,16 c 0,-3.44396 1.341126,-6.68163 3.776311,-9.11689 C 9.318291,4.44784 12.556117,3.1068 16,3.1068 M 16,0 C 7.163417,0 0,7.16342 0,16 0,24.83658 7.163417,32 16,32 24.836583,32 32,24.83658 32,16 32,7.16342 24.836583,0 16,0 l 0,0 z M 14.194874,14.84124 M 12.692738,15.40629 7.91767,11.73833 v 8.44287 l 4.775068,-4.77491 z M 24.195262,10.03324 H 7.973903 l 8.104233,6.2254 8.117126,-6.2254 z m -5.845592,6.23053 -2.272233,1.74268 -2.275961,-1.7482 -5.863923,5.86392 h 16.270602 l -5.858485,-5.8584 z m 1.109592,-0.85111 4.778408,4.77841 v -8.44319 l -4.778408,3.66478 z"
+     inkscape:connector-curvature="0" /></svg>
