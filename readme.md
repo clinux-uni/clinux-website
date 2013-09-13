@@ -1,21 +1,18 @@
+# CLINUX - WEBSITE
+
+Pagina web de la Comunidad de Software Libre de la Universidad Nacional de Ingenieria - UNI CLINUX
+
+## Antes de empesar
+
+Para que la pagina web funcione correctamete se debe tener instalado y correctamente configurado:
+	
+	* <a href="http://www.apache.org/">Apache</a>
+	* <a href="http://php.net/">PHP</a>
+	* <a href="http://www.mysql.com/">MySQL</a> / <a href="https://mariadb.org/">MariaDB</a>
+
 ## Laravel PHP Framework
 
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/version.png)](https://packagist.org/packages/laravel/framework) [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.png)](https://packagist.org/packages/laravel/framework) [![Build Status](https://travis-ci.org/laravel/framework.png)](https://travis-ci.org/laravel/framework)
+> Conocer mas de <a href="http://laravel.com/">Laravel PHP Framework</a>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
-
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
-
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
-
-## Official Documentation
-
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
-
-### Contributing To Laravel
-
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+	1. Descargar Laravel PHP Framework de su << href="https://github.com/laravel/laravel/archive/master.zip">repositorio de GitHub</a>
+	2. 
