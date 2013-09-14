@@ -10,9 +10,10 @@ Para que la pagina web funcione correctamete se debe tener instalado y correctam
 * <a href="http://php.net/">PHP</a>
 * <a href="http://www.mysql.com/">MySQL</a> / <a href="https://mariadb.org/">MariaDB</a>
 
-## Laravel PHP Framework
+## Lanzar el sitio
 
-> Conocer mas de <a href="http://laravel.com/">Laravel PHP Framework</a>
+Realmente con lo anterior instalado y debidamente configurado (LAMP - Apache, MySQL/MariaDB, PHP) no tendrias que hacer mas
+que clonar el repo en el directorio de paginas web de apache y asignarle permisos 775 al directorio app/storage dentro de
+la carpeta de sitio que se acaba de clonar de github.
 
-1. Descargar Laravel PHP Framework de su <a href="https://github.com/laravel/laravel/archive/master.zip">repositorio de GitHub</a>
-2. 
+	chmod -R 777 apache_www_dir/clinux-website/app/storage
