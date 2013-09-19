@@ -48,7 +48,7 @@ Si quieres tener composer de manera global en tu sistema, mueve el archivo compo
 (Info)
 Más información acerca de Composer.
 
-* <a href="http://getcomposer.org"/>Composer</a>
+* <a href="http://getcomposer.org">Composer</a>
 
 ### 3. Instala las dependecias del Proyecto Laravel mediante Composer
 Si solo descargaste Composer ejecuta el siguiente comando:
