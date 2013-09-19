@@ -25,36 +25,44 @@ la carpeta de sitio que se acaba de clonar de github. <a href="http://laravel.co
 
 ### 1. Clonar el Repositorio de Github
 Entra a tu DocumentRoot, en la mayoria de los sistemas Linux es /var/www y ejecuta el comando:
+
 	$ git clone git@github.com:clinux-uni/clinux-website.git
 
 Entra a la carpeta del Proyecto clinux-website
 
 ### 2. Instalar Composer
 Ejecuta el siguiente comando:
+
 	$ curl -sS https://getcomposer.org/installer | php
 
 Ahora tendras un archivo composer.phar en tu directorio.
 Comprueba la instalación con el siguiente comando:
+
 	$ php compser.phar
 
 (Opcional)
 Si quieres tener composer de manera global en tu sistema, mueve el archivo composer.phar a tu directorio $PATH, en la mayoria de los sistemas Linux es /usr/local/bin
+
 	$ mv composer.phar /usr/local/bin/composer
 
 (Info)
 Más información acerca de Composer.
-* <a href="http://getcomposer.org/>Composer</a>
+
+* <a href="http://getcomposer.org"/>Composer</a>
 
 ### 3. Instala las dependecias del Proyecto Laravel mediante Composer
 Si solo descargaste Composer ejecuta el siguiente comando:
+
 	$ php composer.phar install
 
 Si agregaste composer al $PATH del sistema:
+
 	$composer install
 
 Comprueba la instalación verificando que exista el directorio vendor.
 
 ### 4. Abre tu navegador preferido e introduce la url del proyecto:
+
 	http://localhost/clinux-website/public
 
 Si todo a salido bien podras ver el sitio.
