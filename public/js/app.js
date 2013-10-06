@@ -1,5 +1,6 @@
 
-$('.bandera').css('height', (screen.height-170));
+$('.bandera').css('height', (window.innerHeight-55));
+console.log(window.innerHeight);
 
 $(document).ready(function(){
     var menu = document.querySelector('.menu');
