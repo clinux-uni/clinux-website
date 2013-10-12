@@ -12,6 +12,7 @@
 	  	<title>CLINUX</title>
 
 	  	<!-- CSS -->
+	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/fuentes.css" />
 	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/app.css" />
 	  	<link rel="shortcut icon" href="{{URL::to('/')}}/img/favicon.png">
 	</head>
