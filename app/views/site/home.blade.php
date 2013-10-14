@@ -2,18 +2,20 @@
 
 @section('content')
 <section class="post izq">
-	<div class="espaciador" style="height:15px;"></div>
-	<div class="nombre">
-		<h1>LINUX</h1>
+	<div>
+		<div class="espaciador" style="height:15px;"></div>
+		<div class="nombre">
+			<h1>LINUX</h1>
+		</div>
+		<div class="miniatura">
+			<img src="{{URL::to('/')}}/img/tux.svg">
+		</div>
+		<div class="extracto">
+			<p>GNU / Linux est una ex coniunctione termini praedicatur de coro dicti nucleus Linux cum 
+			GNU sive liber Unix similis ratio. Eorum development est unus of plurrimi prominent exempla ...</p>
+		</div>
+		<div class="espaciador" style="height:50px;"></div>
 	</div>
-	<div class="miniatura">
-		<img src="{{URL::to('/')}}/img/tux.svg">
-	</div>
-	<div class="extracto">
-		<p>GNU / Linux est una ex coniunctione termini praedicatur de coro dicti nucleus Linux cum 
-		GNU sive liber Unix similis ratio. Eorum development est unus of plurrimi prominent exempla ...</p>
-	</div>
-	<div class="espaciador" style="height:50px;"></div>
 </section>
 
 <section class="post der">
