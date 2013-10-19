@@ -1,7 +1,8 @@
 @extends('layouts.home')
 
 @section('content')
-<section class= "column twocol twothirdcol" style="position: absolute; left: 0px; top: 1808px;">
+<div class="contenedor_post">
+<section class= "column twocol twothirdcol" style="position: absolute; left: 0px; top: 0px;">
 	<div class="post izq">	
 		<figure class="miniatura">
 			<a title="linux" rel="bookmark" href="#">
@@ -26,7 +27,7 @@
 	</div>
 </section>
 
-<section class= "column twocol twothirdcol" style="position: absolute; left: 367px; top: 1820px;">
+<section class= "column twocol twothirdcol" style="position: absolute; left: 380px; top: 0px;">
 <!--	<div class="espaciador" style="height:15px;"></div>
 	<div class="nombre">
 		<h1>CLINUX</h1>
@@ -63,7 +64,7 @@
 	</div>
 </section>
 
-<section class="post izq">
+<section class="post izq" style="position: absolute; left: 0px; top: 420px;">
 	<div class="espaciador" style="height:15px;"></div>
 	<div class="nombre">
 		<h1>TITULO</h1>
@@ -76,7 +77,7 @@
 	<div class="espaciador" style="height:50px;"></div>
 </section>
 
-<section class="post der">
+<section class="post izq" style="position: absolute; left: 0px; top: 620px;">
 	<div class="espaciador" style="height:15px;"></div>
 	<div class="nombre">
 		<h1>TITULO</h1>
@@ -88,4 +89,5 @@
 	</div>
 	<div class="espaciador" style="height:50px;"></div>
 </section>
+</div>
 @stop

@@ -46,7 +46,9 @@
 			</header>
 
 			<section class="sub-middle">
+				
 				@yield('content')
+				
 	 		</section>
 		
 		</section>

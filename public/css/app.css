@@ -37,6 +37,12 @@ img, video {
     height: auto;
 }
 
+.contenedor_post{
+	position: relative; 
+	height: 33.22px;
+
+}
+
 .bandera {
 	background-color:#ccc;
   	background-image: -moz-radial-gradient(center 45deg,circle cover, #ccc, #333);
@@ -228,8 +234,11 @@ img, video {
 	margin:0;
 }
 .twocol {
-    width: 24.9%;
+    width: 49.9%;
 }
 .column {
     float: left;
+}
+.twothirdcol{
+	width:58.7%;
 }
