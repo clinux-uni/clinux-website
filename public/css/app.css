@@ -3,17 +3,14 @@
 	padding: 0;
 }
 
-<<<<<<< HEAD
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 18px;
-    font-family: "Oswald",sans-serif;
     font-weight: 300;
     line-height: 1.62em;
     letter-spacing: 1px;
-=======
+}
 body {
 	background: #f8f8f8;
->>>>>>> af24616ca568ad9130c5eac23a278d851cec9f42
 }
 
 a {
