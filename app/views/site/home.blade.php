@@ -6,7 +6,7 @@
 	<div class="post izq">	
 		<figure class="miniatura">
 			<a title="linux" rel="bookmark" href="#">
-				<img class="attachment-teaser-thumb wp-post-image" width="332" height="221" alt="linux" src="{{URL::to('/')}}/img/tux.svg"></img>
+				<img class="attachment-teaser-thumb wp-post-image" alt="linux" src="{{URL::to('/')}}/img/tux.svg"></img>
 			</a>
 		</figure>
 		<div class="extracto">
@@ -28,22 +28,10 @@
 </section>
 
 <section class= "column twocol twothirdcol" style="position: absolute; left: 380px; top: 0px;">
-<!--	<div class="espaciador" style="height:15px;"></div>
-	<div class="nombre">
-		<h1>CLINUX</h1>
-	</div>
-	<div class="miniatura">
-		<img src="{{URL::to('/')}}/img/clinux.svg">
-	</div>
-	<div class="extracto">
-		<p>Univer Linux CLINUX verbum ludum communitas est communitas Liberarum Programmationis 
-		National University of Engineering cum Hispanis Acronym Univer attendens ad promovere usum ...</p>
-	</div>
-	<div class="espaciador" style="height:50px;"></div>-->
 	<div class="post izq">	
 		<figure class="miniatura">
 			<a title="linux" rel="bookmark" href="#">
-				<img class="attachment-teaser-thumb wp-post-image" width="332" height="221" alt="linux" src="{{URL::to('/')}}/img/clinux.svg"></img>
+				<img class="attachment-teaser-thumb wp-post-image" alt="linux" src="{{URL::to('/')}}/img/clinux.svg"></img>
 			</a>
 		</figure>
 		<div class="extracto">
@@ -64,7 +52,7 @@
 	</div>
 </section>
 
-<section class="post izq" style="position: absolute; left: 0px; top: 420px;">
+<section class="post izq" style="position: absolute; left: 0px; top: 450px;">
 	<div class="espaciador" style="height:15px;"></div>
 	<div class="nombre">
 		<h1>TITULO</h1>
@@ -77,7 +65,7 @@
 	<div class="espaciador" style="height:50px;"></div>
 </section>
 
-<section class="post izq" style="position: absolute; left: 0px; top: 620px;">
+<section class="post izq" style="position: absolute; left: 0px; top: 650px;">
 	<div class="espaciador" style="height:15px;"></div>
 	<div class="nombre">
 		<h1>TITULO</h1>

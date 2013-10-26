@@ -40,7 +40,6 @@ img, video {
 .contenedor_post{
 	position: relative; 
 	height: 33.22px;
-
 }
 
 .bandera {
@@ -185,24 +184,11 @@ img, video {
 }
 
 .post {
-   	/*margin:2.5%;*/
+	max-width: 300px;
 	background:#fff;
 	border-bottom:#DDD 1px solid;
 	border-bottom:rgba(0,0,0,.13) 1px solid;
 	box-shadow:0 0 5px rgba(0,0,0,.1);
-}
-
-.der {
-    margin: 10px auto 10px 10px;
-}
-
-.izq {
-    margin: 10px 10px 10px auto;
-}
-
-.post .miniatura {
-    float:right;
-	width:69.5%;
 }
 
 .wp-post-image {
