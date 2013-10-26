@@ -1,6 +1,7 @@
 @extends('layouts.home')
 
 @section('content')
+<<<<<<< HEAD
 <div class="contenedor_post">
 <section class= "column twocol twothirdcol" style="position: absolute; left: 0px; top: 0px;">
 	<div class="post izq">	
@@ -22,6 +23,20 @@
 				GNU sive liber Unix similis ratio. Eorum development est unus of plurrimi prominent exempla ...</p>
 			</div>
 			<div class="clear"></div>
+=======
+<section class="post izq">
+	<div>
+		<div class="espaciador" style="height:15px;"></div>
+		<div class="nombre">
+			<h1>LINUX</h1>
+		</div>
+		<div class="miniatura">
+			<img src="{{URL::to('/')}}/img/tux.svg">
+		</div>
+		<div class="extracto">
+			<p>GNU / Linux est una ex coniunctione termini praedicatur de coro dicti nucleus Linux cum 
+			GNU sive liber Unix similis ratio. Eorum development est unus of plurrimi prominent exempla ...</p>
+>>>>>>> af24616ca568ad9130c5eac23a278d851cec9f42
 		</div>
 		<div class="espaciador" style="height:50px;"></div>
 	</div>
