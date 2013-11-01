@@ -8,13 +8,20 @@
 
 	<head>
 		<meta charset="utf-8" />
-	  	<meta name="viewport" content="width=device-width" />
+	  	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	  	<title>CLINUX</title>
+
+	  	<!-- FONT -->
+	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/font.css" />
 
 	  	<!-- CSS -->
 	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/app.css" />
+	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/less.css" />
+	  	
+	  	<!-- FAVICON -->
 	  	<link rel="shortcut icon" href="{{URL::to('/')}}/img/favicon.png">
 	</head>
+	
 	<body>
 		<!-- Wrap all page content here -->
 	    <section id="envoltura">
@@ -44,7 +51,7 @@
 			    </nav>
 			</header>
 
-			<section class="sub-middle">
+			<section class="contenedor">
 				@yield('content')
 	 		</section>
 		
