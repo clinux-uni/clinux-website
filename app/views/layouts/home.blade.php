@@ -12,10 +12,9 @@
 	  	<title>CLINUX</title>
 
 	  	<!-- FONT -->
-	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/font.css" />
+	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/font.css" /> 
 
 	  	<!-- CSS -->
-	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/fuentes.css" />
 	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/app.css" />
 	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/less.css" />
 	  	
