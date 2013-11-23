@@ -42,9 +42,9 @@
 			          	<div class="colapso-menu">
 			          		<!-- Barra de Menu -->
 				            <ul class="barra">
-					            <li class="activo"><a href="#"><img src="{{URL::to('/')}}/img/globe.svg"></a></li>
-					            <li><a href="#about"><img src="{{URL::to('/')}}/img/about.svg"></a></li>
-					            <li><a href="#contact"><img src="{{URL::to('/')}}/img/email.svg"></a></li>
+					            <li class="activo"><div class = "act"><a href="#"><img src="{{URL::to('/')}}/img/globe.svg"></a></div></li>
+					            <li><div class="about"><a href="#about"><img src="{{URL::to('/')}}/img/about.svg"></a></div></li>
+					            <li><div class="contact"><a href="#contact"><img src="{{URL::to('/')}}/img/email.svg"></a></div></li>
 				            </ul>
 			          	</div>
 			        </div>
