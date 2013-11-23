@@ -12,10 +12,9 @@
 	  	<title>CLINUX</title>
 
 	  	<!-- FONT -->
-	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/font.css" />
+	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/font.css" /> 
 
 	  	<!-- CSS -->
-	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/fuentes.css" />
 	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/app.css" />
 	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/less.css" />
 	  	
@@ -43,9 +42,9 @@
 			          	<div class="colapso-menu">
 			          		<!-- Barra de Menu -->
 				            <ul class="barra">
-					            <li class="activo"><a href="#"><img src="{{URL::to('/')}}/img/globe.svg"></a></li>
-					            <li><a href="#about"><img src="{{URL::to('/')}}/img/about.svg"></a></li>
-					            <li><a href="#contact"><img src="{{URL::to('/')}}/img/email.svg"></a></li>
+					            <li class="activo"><div class = "act"><a href="#"><img src="{{URL::to('/')}}/img/globe.svg"></a></div></li>
+					            <li><div class="about"><a href="#about"><img src="{{URL::to('/')}}/img/about.svg"></a></div></li>
+					            <li><div class="contact"><a href="#contact"><img src="{{URL::to('/')}}/img/email.svg"></a></div></li>
 				            </ul>
 			          	</div>
 			        </div>

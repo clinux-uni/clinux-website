@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="contenedor_post">
-<section class= "column twocol twothirdcol" style="position: absolute; left: 0px; top: 0px;">
+<section class= "column section1">
 	<div class="post izq">	
 		<figure class="miniatura">
 			<a title="linux" rel="bookmark" href="#">
@@ -27,7 +27,7 @@
 	</div>
 </section>
 
-<section class= "column twocol twothirdcol" style="position: absolute; left: 380px; top: 0px;">
+<section class= "column section2">
 	<div class="post izq">	
 		<figure class="miniatura">
 			<a title="linux" rel="bookmark" href="#">
@@ -52,7 +52,7 @@
 	</div>
 </section>
 
-<section class="post izq" style="position: absolute; left: 0px; top: 450px;">
+<section class="post izq column section3">
 	<div class="espaciador" style="height:15px;"></div>
 	<div class="nombre">
 		<h1>TITULO</h1>
@@ -65,7 +65,7 @@
 	<div class="espaciador" style="height:50px;"></div>
 </section>
 
-<section class="post izq" style="position: absolute; left: 0px; top: 650px;">
+<section class="post izq column section4" >
 	<div class="espaciador" style="height:15px;"></div>
 	<div class="nombre">
 		<h1>TITULO</h1>

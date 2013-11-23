@@ -115,7 +115,7 @@ img, video {
   	display: block;
 }
 
-.barra > li > a {
+.barra > li > div >a {
 	color: #777777;
     position: relative;
 	display: block;
@@ -212,16 +212,4 @@ img, video {
 	font-family: "gulim",sans-serif;
 	clear:both;
 	margin:0;
-}
-
-.twocol {
-    width: 49.9%;
-}
-
-.column {
-    float: left;
-}
-
-.twothirdcol{
-	width:58.7%;
 }

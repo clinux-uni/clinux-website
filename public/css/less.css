@@ -15,9 +15,35 @@ px      68    160    252    344    436    528    620    712    804    896    */
 .contenedor {
 	width: 896px;
 	padding: 0px 48px 0px;
-	background: rgb(232,232,232);
+	/*background: rgb(232,232,232);*/
 	color: rgb(60,60,60);
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+.section1
+{
+	position: absolute;
+	left: 0px; 
+	top: 0px;
+}
+.section2{
+	position: absolute;
+	left: 380px; 
+	top: 0px;
+}
+.section3{
+	position: absolute; 
+	left: 0px; 
+	top: 450px;
+}
+.section4{
+	position: absolute; 
+	left: 0px; 
+	top: 650px;
+}
+
+.column {
+    float: left;
 }
 
 /*		Tablet Layout: 768px.
@@ -46,15 +72,36 @@ cols    1     2      3
 px      68    160    252    */
 
 @media only screen and (max-width: 767px) {
-	
-	body {
+	.contenedor {
 		width: 252px;
 		padding: 0px 34px 0px;
 	}
 	
+	.section1
+	{
+		position: relative;
+		left: 0px; 
+		top: 0px;
+	}
+	.section2{
+		position: relative;
+		left: 0px; 
+		top: 0px;
+		margin-top: 30px;
+	}
+	.section3{
+		position: relative;
+		left: 0px; 
+		top: 0px;
+		margin-top: 30px;
+	}
+	.section4{
+		position: relative;
+		left: 0px; 
+		top: 0px;
+		margin-top: 30px;
+	}
 }
-
-
 
 /*		Wide Mobile Layout: 480px.
 		Gutters: 24px.
@@ -65,12 +112,10 @@ cols    1     2      3      4      5
 px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	
-	body {
+	.contenedor {
 		width: 436px;
 		padding: 0px 22px 0px;
 	}
-
 }
 
 
@@ -78,6 +123,16 @@ px      68    160    252    344    436    */
 	Overrides styles for devices with a 
 	device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
+
+@media only screen and (max-width: 480px) {
+	.barra {
+		width: 5px;
+		padding: 0px 36px 0px;
+	}
+	.about{display:none;}
+	.contact{display:none;}
+}
+
 
 @media 
 	only screen and (-webkit-min-device-pixel-ratio: 2),
