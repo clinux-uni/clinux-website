@@ -16,7 +16,7 @@ Route::get('/', function()
 	return View::make('site.home');
 });
 
-Route::get('users', function()
+Route::get('/usuario', function()
 {
     return 'Users!';
 });
