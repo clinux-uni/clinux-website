@@ -19,7 +19,7 @@
 	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/less.css" />
 	  	
 	  	<!-- FAVICON -->
-	  	<link rel="shortcut icon" href="{{URL::to('/')}}/img/favicon.png">
+	  	<link rel="shortcut icon" href="{{URL::to('/')}}/img/favicon.svg">
 	</head>
 	
 	<body>
@@ -35,16 +35,19 @@
 			        <div class="contenedor">
 			        	<!-- Titlulo de la Barra de Navegacion -->
 			          	<div class="cabecera-menu">
-			          		<a class="titulo-menu" href="{{URL::to('/')}}"><img src="{{URL::to('/')}}/img/3d-view.svg"></a>
+			          		<a class="titulo-menu" href="{{URL::to('/')}}">
+			          			<img src="{{URL::to('/')}}/img/logo-head.png" style="margin-top:8px">
+			          			CLINUX
+			          		</a>
 			          	</div>
 
 			          	<!-- Menu -->
 			          	<div class="colapso-menu">
 			          		<!-- Barra de Menu -->
 				            <ul class="barra">
-					            <li class="activo"><div class = "act"><a href="#"><img src="{{URL::to('/')}}/img/globe.svg"></a></div></li>
-					            <li><div class="about"><a href="#about"><img src="{{URL::to('/')}}/img/about.svg"></a></div></li>
-					            <li><div class="contact"><a href="#contact"><img src="{{URL::to('/')}}/img/email.svg"></a></div></li>
+					            <li class="activo"><div class = "act"><a href="#"><img src="{{URL::to('/')}}/img/globe.svg" style="margin-top:8px"></a></div></li>
+					            <li><div class="about"><a href="#about"><img src="{{URL::to('/')}}/img/about.svg" style="margin-top:8px"></a></div></li>
+					            <li><div class="contact"><a href="#contact"><img src="{{URL::to('/')}}/img/email.svg" style="margin-top:8px"></a></div></li>
 				            </ul>
 			          	</div>
 			        </div>
