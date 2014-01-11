@@ -6,4 +6,10 @@ class TestController extends BaseController
 	{
 		return View::make('site.home'); 
 	}
+
+	public function mesajes() 
+	{
+		return View::make('site.msj');
+	}
+
 }
