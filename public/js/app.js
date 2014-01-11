@@ -20,3 +20,21 @@ $(document).ready(function(){
 
     document.onscroll = scroll;
 });
+
+$(document).ready(function(){
+	$("#hamburger").click(function(){
+		var menubarra = document.querySelector('.barra');
+		var menu = document.querySelector('.men');
+		menubarra.style.padding = "0px";
+		menubarra.style.float = "left";
+		if(menubarra.style.display=='none' /*|| menu.style.display==''*/){
+			menubarra.style.display='block';
+			//menu.style.display='block';
+		}
+		else{
+			menubarra.style.display='none';
+		}
+	
+	});
+	
+});

@@ -11,7 +11,24 @@
 |
 */
 
-Route::get('/', function()
+/*Route::get('/', function()
 {
 	return View::make('site.home');
+});
+
+Route::get('/site/msj', function()
+{
+	return View::make('site.msj');
+});
+
+Route::get('/nada', function()
+{
+	return "lol";
+});*/
+
+Route::controller("/","TestController");
+
+Route::get('/site/msj', function()
+{
+	return View::make('site.msj');
 });

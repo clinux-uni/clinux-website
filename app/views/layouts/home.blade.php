@@ -41,10 +41,13 @@
 			          	<!-- Menu -->
 			          	<div class="colapso-menu">
 			          		<!-- Barra de Menu -->
-				            <ul class="barra">
+			          		<ul id = "hamburger" class = "men">
+								<li><img src="{{URL::to('/')}}/img/hamburger.svg"/></li>
+			          		</ul>
+				            <ul id = "manubarra" class="barra">		
 					            <li class="activo"><div class = "act"><a href="#"><img src="{{URL::to('/')}}/img/globe.svg"></a></div></li>
 					            <li><div class="about"><a href="#about"><img src="{{URL::to('/')}}/img/about.svg"></a></div></li>
-					            <li><div class="contact"><a href="#contact"><img src="{{URL::to('/')}}/img/email.svg"></a></div></li>
+					            <li><div class="contact"><a href="{{URL::to('/')}}/site/msj"><img src="{{URL::to('/')}}/img/email.svg"></a></div></li>
 				            </ul>
 			          	</div>
 			        </div>

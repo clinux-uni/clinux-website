@@ -19,6 +19,19 @@ px      68    160    252    344    436    528    620    712    804    896    */
 	color: rgb(60,60,60);
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 }
+.barra{
+		display:block;
+	}
+
+.men{
+	display:none;
+	float: left;
+    margin: 0;
+    padding-left: 0;
+    padding-top:0px ;
+    margin-top:-6px;
+  	list-style: none
+}
 
 .section1
 {
@@ -58,6 +71,12 @@ px      68    160    252    344    436    528    620    712    */
 	.contenedor {
 		width: 712px;
 		padding: 0px 28px 0px;
+	}
+	.men{
+		display:none;
+	}
+	.barra{
+		display:block;
 	}
 }
 
@@ -101,6 +120,12 @@ px      68    160    252    */
 		top: 0px;
 		margin-top: 30px;
 	}
+	.men{
+		display:none;
+	}
+	.barra{
+		display:block;
+	}
 }
 
 /*		Wide Mobile Layout: 480px.
@@ -116,6 +141,12 @@ px      68    160    252    344    436    */
 		width: 436px;
 		padding: 0px 22px 0px;
 	}
+	.men{
+		display:none;
+	}
+	.barra{
+		display:block;
+	}
 }
 
 
@@ -129,8 +160,9 @@ px      68    160    252    344    436    */
 		width: 5px;
 		padding: 0px 36px 0px;
 	}
-	.about{display:none;}
-	.contact{display:none;}
+	.barra{display:none;}
+	.men{display:block;}
+	
 }
 
 
