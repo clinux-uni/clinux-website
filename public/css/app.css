@@ -6,7 +6,7 @@
 
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 18px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.62em;
     letter-spacing: 1px;
 }
@@ -57,9 +57,10 @@ img, video {
 	right: 0;
 	left: 0;
 	background-color: #ffffff;
-  	border-bottom: 5px solid #d8d8d8;
+	opacity: 0.9;
+  	border-bottom: 1px solid #e5e5e5;
   	min-height: 50px;
-	height: 50px;
+	height: 62px;
 	margin-bottom: 1.875em;
 }
 

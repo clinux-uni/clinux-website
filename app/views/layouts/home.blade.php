@@ -19,7 +19,7 @@
 	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/less.css" />
 	  	
 	  	<!-- FAVICON -->
-	  	<link rel="shortcut icon" href="{{URL::to('/')}}/img/favicon.png">
+	  	<link rel="shortcut icon" href="{{URL::to('/')}}/img/favicon.svg">
 	</head>
 	
 	<body>
@@ -35,12 +35,16 @@
 			        <div class="contenedor">
 			        	<!-- Titlulo de la Barra de Navegacion -->
 			          	<div class="cabecera-menu">
-			          		<a class="titulo-menu" href="{{URL::to('/')}}"><img src="{{URL::to('/')}}/img/3d-view.svg"></a>
+			          		<a class="titulo-menu" href="{{URL::to('/')}}" style="font-size:30px; margin-top:8px;">
+			          			<img src="{{URL::to('/')}}/img/logo-head.png">
+			          			CLINUX
+			          		</a>
 			          	</div>
 
 			          	<!-- Menu -->
 			          	<div class="colapso-menu">
 			          		<!-- Barra de Menu -->
+<<<<<<< HEAD
 			          		<ul id = "hamburger" class = "men">
 								<li><img src="{{URL::to('/')}}/img/hamburger.svg"/></li>
 			          		</ul>
@@ -48,6 +52,12 @@
 					            <li class="activo"><div class = "act"><a href="#"><img src="{{URL::to('/')}}/img/globe.svg"></a></div></li>
 					            <li><div class="about"><a href="#about"><img src="{{URL::to('/')}}/img/about.svg"></a></div></li>
 					            <li><div class="contact"><a href="{{URL::to('/')}}/site/msj"><img src="{{URL::to('/')}}/img/email.svg"></a></div></li>
+=======
+				            <ul class="barra">
+					            <li class="activo"><div class = "act"><a href="#"><img src="{{URL::to('/')}}/img/globe.svg" style="margin-top:8px"></a></div></li>
+					            <li><div class="about"><a href="#about"><img src="{{URL::to('/')}}/img/about.svg" style="margin-top:8px"></a></div></li>
+					            <li><div class="contact"><a href="#contact"><img src="{{URL::to('/')}}/img/email.svg" style="margin-top:8px"></a></div></li>
+>>>>>>> ba5f7c6942a1ace5d69172118434b5f99f601ea5
 				            </ul>
 			          	</div>
 			        </div>
