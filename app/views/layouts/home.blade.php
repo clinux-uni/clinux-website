@@ -35,8 +35,8 @@
 			        <div class="contenedor">
 			        	<!-- Titlulo de la Barra de Navegacion -->
 			          	<div class="cabecera-menu">
-			          		<a class="titulo-menu" href="{{URL::to('/')}}">
-			          			<img src="{{URL::to('/')}}/img/logo-head.png" style="margin-top:8px">
+			          		<a class="titulo-menu" href="{{URL::to('/')}}" style="font-size:30px; margin-top:8px;">
+			          			<img src="{{URL::to('/')}}/img/logo-head.png">
 			          			CLINUX
 			          		</a>
 			          	</div>
