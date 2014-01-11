@@ -33,9 +33,7 @@ Route::get('/site/msj', function()
 {
 	return View::make('site.msj');
 });
-=======
 Route::get('/usuario', function()
 {
     return 'Users!';
 });
->>>>>>> ba5f7c6942a1ace5d69172118434b5f99f601ea5
