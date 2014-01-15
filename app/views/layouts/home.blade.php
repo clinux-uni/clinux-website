@@ -19,7 +19,8 @@
 	  	<link rel="stylesheet" href="{{URL::to('/')}}/css/less.css" />
 	  	
 	  	<!-- FAVICON -->
-	  	<link rel="shortcut icon" href="{{URL::to('/')}}/img/favicon.svg">
+	  	<link rel="shortcut icon" href="{{URL::to('/')}}/img/favicon.svg" />
+	  	<link rel="shortcut icon" href="{{URL::to('/')}}/img/favicon.png" />
 	</head>
 	
 	<body>
@@ -48,9 +49,10 @@
 								<li><img src="{{URL::to('/')}}/img/hamburger.svg"/></li>
 			          		</ul>
 				            <ul id = "manubarra" class="barra">		
-					            <li class="activo"><div class = "act"><a href="#"><img src="{{URL::to('/')}}/img/globe.svg"></a></div></li>
-					            <li><div class="about"><a href="#about"><img src="{{URL::to('/')}}/img/about.svg"></a></div></li>
-					            <li><div class="contact"><a href="{{URL::to('/')}}/site/msj"><img src="{{URL::to('/')}}/img/email.svg"></a></div></li>
+					            <li class="activo"><div class="act"><a href="#">PLANET</a></div></li>
+					            <li><div class="about"><a href="#">NOSOTROS</a></div></li>
+					            <li><div class="contact"><a href="#">CONTACTO</a></div></li>
+					            <li><div>{{link_to_action('RegController@getIndex', 'REGISTRO')}}</div></li>
 				            </ul>
 			          	</div>
 			        </div>

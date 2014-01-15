@@ -16,13 +16,8 @@ Route::get('/', function()
 	return View::make('site.home');
 });
 
-Route::get('/site/msj', function()
-{
-	return View::make('site.msj');
-});
+Route::controller('home', 'HomeController');
 
-
-Route::get('/usuario', function()
-{
-    return 'Users!';
-});
+// RegController
+Route::any('registro/iniciar', 'RegController@iniciar');
+Route::controller('registro', 'RegController');
