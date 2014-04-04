@@ -1,0 +1,4 @@
+[2013-11-25 21:51:40] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Routing\Controllers\Controller::detect()' in /var/www/html/clinux-website/app/routes.php:19
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

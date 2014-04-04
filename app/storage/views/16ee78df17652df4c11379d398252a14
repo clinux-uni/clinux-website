@@ -1,0 +1,17 @@
+
+<?php $__env->startSection('content'); ?>
+<div>
+
+	<?php echo Form::open(array('url' => '')); ?>
+
+    	<?php echo Form::text('user'); ?><br>
+		<?php echo Form::password('pass'); ?><br>
+		<?php echo Form::submit('Iniciar'); ?>
+
+		<?php echo Form::token(); ?>
+	<?php echo Form::close(); ?>
+	
+</div>
+<?php $__env->stopSection(); ?> 
+
+<?php echo $__env->make('layouts.reg', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
