@@ -13,11 +13,5 @@
 
 Route::get('/', function()
 {
-	return View::make('site.home');
+	return View::make('hello');
 });
-
-Route::controller('home', 'HomeController');
-
-// RegController
-Route::any('registro/iniciar', 'RegController@iniciar');
-Route::controller('registro', 'RegController');

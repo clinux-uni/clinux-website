@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost/clinux-website/public',
+	'url' => 'http://localhost',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'key' => 'lu1KKUCB8k9iK6mRkqXzFARritfRhpSJ',
+	'key' => '9JWS2gUGNrIUJkboz54TFjRdjtRjfu4S',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -160,7 +160,7 @@ return array(
 		'Password'        => 'Illuminate\Support\Facades\Password',
 		'Queue'           => 'Illuminate\Support\Facades\Queue',
 		'Redirect'        => 'Illuminate\Support\Facades\Redirect',
-		'RedisL4'           => 'Illuminate\Support\Facades\Redis',
+		'Redis'           => 'Illuminate\Support\Facades\Redis',
 		'Request'         => 'Illuminate\Support\Facades\Request',
 		'Response'        => 'Illuminate\Support\Facades\Response',
 		'Route'           => 'Illuminate\Support\Facades\Route',
